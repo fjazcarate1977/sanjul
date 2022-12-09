@@ -1,7 +1,7 @@
 <script lang="ts">
   import { marked } from 'marked';
 
-  import Profiles from '@data/profiles';
+  import profiles from '@data/profiles';
 
   import type { PageData } from './$types';
 
@@ -11,7 +11,7 @@
 <h1>{data.title}</h1>
 <div>{@html data.content}</div>
 
-<article class="prose">{@html marked.parse(Profiles.francisco)}</article>
+<article class="prose">{@html marked.parse(profiles.francisco)}</article>
 
 <!-- <script lang="ts">
   import { marked } from 'marked';

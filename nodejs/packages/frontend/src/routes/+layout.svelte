@@ -10,8 +10,8 @@
   import type { DataProps } from '$lib/types';
 
   import data from '@data/all.json';
-  import FooterNav from '@organisms/FooterNav.svelte';
-  import Navbar from '@organisms/Navbar.svelte';
+  import Footer from '@organisms/Footer.svelte';
+  import Navbar from '@organisms/NavegationBar.svelte';
 
   export const load = async () => {
     if (browser) {
@@ -20,11 +20,11 @@
     await waitLocale();
   };
 
-  const { navbarList, dropdownList } = data as DataProps;
+  const { navBarList, dropdownList } = data as DataProps;
 </script>
 
 {#if !$isLoading}
-  <Navbar {navbarList} {dropdownList} />
+  <Navbar {navBarList} {dropdownList} />
   <slot />
-  <FooterNav {navbarList} {dropdownList} />
+  <Footer {navBarList} {dropdownList} />
 {/if}

@@ -10,9 +10,9 @@
     "baseUrl": ".",
     "paths": {
       "@styles/*": ["src/styles/*"],
-      "@organisms/*": ["src/organisms/*"],
-      "@molecules/*": ["src/molecules/*"],
-      "@atoms/*": ["src/atoms/*"],
+      "@organisms/*": ["src/components/organisms/*"],
+      "@molecules/*": ["src/components/molecules/*"],
+      "@atoms/*": ["src/components/atoms/*"],
       "@data/*": ["src/data/*"],
       "$lib/*": ["src/lib/*"],
       "$lib": ["src/lib"]

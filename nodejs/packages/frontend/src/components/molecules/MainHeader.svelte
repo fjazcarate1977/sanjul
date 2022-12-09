@@ -1,7 +1,7 @@
 <script lang="ts">
   import { _ } from 'svelte-i18n';
 
-  import Divider from '@atoms/divider.svelte';
+  import Divider from '@atoms/Divider.svelte';
 
   export let mainBackground: string;
 </script>

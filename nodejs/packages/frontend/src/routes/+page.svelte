@@ -2,7 +2,7 @@
   import type { DataProps } from '$lib/types';
 
   import data from '@data/all.json';
-  import Mainheader from '@molecules/Mainheader.svelte';
+  import MainHeader from '@molecules/MainHeader.svelte';
 
   const team1 = 'img/team-1-800x800.jpg';
   const team2 = 'img/team-2-800x800.jpg';
@@ -14,7 +14,7 @@
 
 <div>
   <main>
-    <Mainheader {mainBackground} />
+    <MainHeader {mainBackground} />
 
     <section class="pb-20 bg-blueGray-200 -mt-24">
       <div class="container mx-auto px-4">

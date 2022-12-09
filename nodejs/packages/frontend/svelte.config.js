@@ -18,9 +18,9 @@ const config = {
     adapter: adapter({ out: 'build' }),
     alias: {
       '@styles': path.resolve('./src/styles'),
-      '@organisms': path.resolve('./src/organisms'),
-      '@molecules': path.resolve('./src/molecules'),
-      '@atoms': path.resolve('./src/atoms'),
+      '@organisms': path.resolve('./src/components/organisms'),
+      '@molecules': path.resolve('./src/components/molecules'),
+      '@atoms': path.resolve('./src/components/atoms'),
       '@data': path.resolve('./src/data')
     }
   }

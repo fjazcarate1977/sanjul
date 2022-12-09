@@ -3,17 +3,17 @@
 
   import { getNewLocale } from '$lib/helpers';
   import { storeLocale } from '$lib/stores';
-  import type { DropdownProps, NavbarLinkProps } from '$lib/types';
+  import type { DropdownProps, NavBarLinkProps } from '$lib/types';
 
   import Dropdown from '@molecules/Dropdown.svelte';
 
-  let navbarOpen = false;
+  let navBarOpen = false;
 
   export let dropdownList: DropdownProps[];
-  export let navbarList: NavbarLinkProps[];
+  export let navBarList: NavBarLinkProps[];
 
-  function setNavbarOpen() {
-    navbarOpen = !navbarOpen;
+  function setNavBarOpen() {
+    navBarOpen = !navBarOpen;
   }
 
   let currentLocale;
@@ -55,13 +55,13 @@
       <button
         class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
         type="button"
-        on:click={setNavbarOpen}
+        on:click={setNavBarOpen}
       >
         <i class="text-white fas fa-bars" />
       </button>
     </div>
     <div
-      class="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none rounded shadow-lg {navbarOpen
+      class="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none rounded shadow-lg {navBarOpen
         ? 'block'
         : 'hidden'}"
       id="example-navbar-warning"
@@ -70,7 +70,7 @@
         <li class="flex items-center">
           <Dropdown {dropdownList} />
         </li>
-        {#each navbarList as link}
+        {#each navBarList as link}
           <li class="flex items-center">
             <a
               class="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"

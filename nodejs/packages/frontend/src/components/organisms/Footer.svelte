@@ -3,9 +3,9 @@
 
   import { goto } from '$app/navigation';
 
-  import type { DropdownProps, NavbarLinkProps } from '$lib/types';
+  import type { DropdownProps, NavBarLinkProps } from '$lib/types';
 
-  export let navbarList: NavbarLinkProps[];
+  export let navBarList: NavBarLinkProps[];
   export let dropdownList: DropdownProps[];
 
   const date = new Date().getFullYear();
@@ -43,7 +43,7 @@
           Find us on any of these platforms, we respond 1-2 business days.
         </h5>
         <div class="mt-6 lg:mb-0 mb-6">
-          {#each navbarList as link}
+          {#each navBarList as link}
             <button
               class="bg-white {link.color} shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
               type="button"

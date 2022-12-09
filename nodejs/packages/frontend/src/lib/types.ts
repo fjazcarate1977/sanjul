@@ -14,14 +14,14 @@ type SocialNetworkColors =
   | 'text-pink-400'
   | 'text-blueGray-800';
 
-export interface NavbarLinkProps {
+export interface NavBarLinkProps {
   title: SocialNetwork;
   link: string;
   color: SocialNetworkColors;
 }
 
 export interface DataProps {
-  navbarList: NavbarLinkProps[];
+  navBarList: NavBarLinkProps[];
   dropdownList: DropdownProps[];
   mainBackground: string;
 }
