@@ -14,12 +14,26 @@
 	},
 	"locale": {
 		"es-ES": "español",
-		"en-US": "inglés"
+		"en-US": "english"
 	},
 	"mainHeader": {
 		"title": "Ingeniería Informática de calidad",
 		"description": "Desarrollo de aplicaciones y soluciones con altos estándares de calidad y rendimiento."
 	},
 	"navigation": "Navegación",
-	"copyright": "© Derechos de autor {date} Sanjul."
+	"copyright": "© Derechos de autor {date} Sanjul.",
+	"mainIdeasList": {
+		"experience": {
+			"title": "Años de experiencia",
+			"description": "Contamos con más de 15 años de experiencia, lo que nos proporciona un gran conocimiento para aplicar en los proyectos."
+		},
+		"innovation": {
+			"title": "Innovación",
+			"description": "En cada proyecto que emprendemos, investigamos nuevas tecnologías para poder ofrecer la mejor solución."
+		},
+		"restless": {
+			"title": "Mente inquieta",
+			"description": "Nuestra forma de trabajar nos lleva a luchar por cada proyecto, intentando mejorar el producto y nuestra valía."
+		}
+	}
 }

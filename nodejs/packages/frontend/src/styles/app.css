@@ -10,3 +10,11 @@
 	font-style: normal;
 	font-display: swap;
 }
+
+@font-face {
+	font-family: 'heart_warmingregular';
+	src: url('/fonts/heart_warming/heart_warming.woff2') format('woff2'),
+		url('/fonts/heart_warming/heart_warming.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

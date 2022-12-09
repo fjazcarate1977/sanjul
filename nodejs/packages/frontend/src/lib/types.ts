@@ -20,8 +20,20 @@ export interface NavBarLinkProps {
   color: SocialNetworkColors;
 }
 
+export interface I18nrefProps {
+  title: string;
+  description: string;
+}
+
+export interface MainIdeasListProps {
+  i18nref: I18nrefProps;
+  icon: string;
+  color: string;
+}
+
 export interface DataProps {
   navBarList: NavBarLinkProps[];
   dropdownList: DropdownProps[];
   mainBackground: string;
+  mainIdeasList: MainIdeasListProps[];
 }

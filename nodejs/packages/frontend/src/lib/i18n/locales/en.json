@@ -13,7 +13,7 @@
 		}
 	},
 	"locale": {
-		"es-ES": "spanish",
+		"es-ES": "español",
 		"en-US": "english"
 	},
 	"mainHeader": {
@@ -21,5 +21,19 @@
 		"description": "Development of applications and solutions with high quality and performance standards"
 	},
 	"navigation": "Navigation",
-	"copyright": "© Copyright {date} Sanjul."
+	"copyright": "© Copyright {date} Sanjul.",
+	"mainIdeasList": {
+		"experience": {
+			"title": "Years of experience",
+			"description": "We have more than 15 years of experience, providing us with great knowledge to apply in the projects."
+		},
+		"innovation": {
+			"title": "Innovation",
+			"description": "On every project that we start, we study all the new technologies in order to give the best solution."
+		},
+		"restless": {
+			"title": "Restless mind",
+			"description": "Our way of work drive us to fight for each project, triying to improve the product and ourselves."
+		}
+	}
 }

@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        marketdeco: ['Market Deco']
+        marketdeco: ['Market Deco'],
+        heartwarming: ['heart_warmingregular']
       },
       colors: {
         ...colors

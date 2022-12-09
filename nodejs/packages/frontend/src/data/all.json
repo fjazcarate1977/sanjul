@@ -23,5 +23,31 @@
     { "link": "", "title": "twitter", "color": "text-pink-400" },
     { "link": "", "title": "github", "color": "text-blueGray-800" }
   ],
-  "mainBackground": "/img/main-background.avif"
+  "mainBackground": "/img/main-background.avif",
+  "mainIdeasList": [
+    {
+      "i18nref": {
+        "title": "mainIdeasList.experience.title",
+        "description": "mainIdeasList.experience.description"
+      },
+      "icon": "puzzle-piece",
+      "color": "teal-500"
+    },
+    {
+      "i18nref": {
+        "title": "mainIdeasList.innovation.title",
+        "description": "mainIdeasList.innovation.description"
+      },
+      "icon": "lightbulb",
+      "color": "rose-500"
+    },
+    {
+      "i18nref": {
+        "title": "mainIdeasList.restless.title",
+        "description": "mainIdeasList.restless.description"
+      },
+      "icon": "person-snowboarding",
+      "color": "cyan-500"
+    }
+  ]
 }

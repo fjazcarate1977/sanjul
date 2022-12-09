@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Market Deco';
-    src: url('MarketDeco.woff2') format('woff2'),
-        url('MarketDeco.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
