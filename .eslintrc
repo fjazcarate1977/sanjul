@@ -1,0 +1,97 @@
+{
+  "env": {
+    "es2022": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "standard",
+    "prettier"
+  ],
+
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./nodejs/tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint", "import"],
+  "rules": {
+    "semi": ["error", "always"],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "arrow-body-style": ["error", "as-needed"],
+    "no-use-before-define": "off",
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always",
+        "alphabetize": { "order": "asc", "caseInsensitive": true },
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object",
+          "type"
+        ],
+        "pathGroups": [
+          {
+            "pattern": "$app/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "$lib/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "{@data,@organisms,@molecules,@atoms}/**",
+            "group": "internal",
+            "position": "after"
+          }
+        ]
+      }
+    ]
+  },
+  "settings": {
+    "import/internal-regex": "^((@organisms)|(@molecules)|(@atoms)|(@data)|($lib))/.+"
+  },
+  "ignorePatterns": ["nodejs/packages/*/**/*.config.ts", "nodejs/packages/*/**/*.server.ts"],
+  "overrides": [
+    {
+      "files": ["nodejs/packages/frontend/**/*.svelte"],
+      "env": {
+        "browser": true
+      },
+      "plugins": ["svelte3"],
+      "processor": "svelte3/svelte3",
+      "parserOptions": {
+        "project": "./nodejs/packages/frontend/tsconfig.json",
+        "extraFileExtensions": [".svelte"]
+      },
+      "settings": {
+        "svelte3/typescript": true
+      },
+      "rules": {
+        "import/first": "off",
+        "@typescript-eslint/restrict-template-expressions": "off",
+        "@typescript-eslint/no-unsafe-argument": "off"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+	"dropdownList": {
+		"brotherhood": {
+			"title": "La hermandad",
+			"links": {
+				"fran": "Francisco (Creatividad)",
+				"leon": "León (Talento)"
+			}
+		},
+		"others": {
+			"philosophy": "Nuestra filosofía",
+			"contact": "Contacto"
+		}
+	},
+	"locale": {
+		"es-ES": "español",
+		"en-US": "inglés"
+	},
+	"mainHeader": {
+		"title": "Ingeniería Informática de calidad",
+		"description": "Desarrollo de aplicaciones y soluciones con altos estándares de calidad y rendimiento."
+	},
+	"navigation": "Navegación",
+	"copyright": "© Derechos de autor {date} Sanjul."
+}

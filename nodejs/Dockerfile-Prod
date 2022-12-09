@@ -1,0 +1,19 @@
+FROM node:16.15.1-alpine3.15
+
+RUN mkdir -p /home/node/app/node_modules
+
+RUN mkdir -p /home/node/app/packages/frontend/build /home/node/app/packages/frontend/node_modules
+
+RUN chown -R node:node /home/node/app
+
+WORKDIR /home/node/app
+
+COPY package.json ./
+
+USER node
+
+RUN npm install
+
+COPY --chown=node:node . .
+
+RUN npm run lerna-up-prod

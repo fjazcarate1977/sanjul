@@ -1,0 +1,25 @@
+{
+	"dropdownList": {
+		"brotherhood": {
+			"title": "Brotherhood",
+			"links": {
+				"fran": "Francisco (Creativity)",
+				"leon": "León (Talent)"
+			}
+		},
+		"others": {
+			"philosophy": "Our philosophy",
+			"contact": "Contact Us"
+		}
+	},
+	"locale": {
+		"es-ES": "spanish",
+		"en-US": "english"
+	},
+	"mainHeader": {
+		"title": "High Quality Computer Engineering",
+		"description": "Development of applications and solutions with high quality and performance standards"
+	},
+	"navigation": "Navigation",
+	"copyright": "© Copyright {date} Sanjul."
+}

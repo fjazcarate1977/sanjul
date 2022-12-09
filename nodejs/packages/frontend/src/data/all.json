@@ -1,0 +1,27 @@
+{
+  "dropdownList": [
+    {
+      "i18nref": "dropdownList.brotherhood.title",
+      "links": [
+        { "link": "", "i18nref": "dropdownList.brotherhood.links.fran" },
+        { "link": "", "i18nref": "dropdownList.brotherhood.links.leon" }
+      ]
+    },
+    {
+      "links": [
+        { "link": "", "i18nref": "dropdownList.others.philosophy" },
+        { "link": "", "i18nref": "dropdownList.others.contact" }
+      ]
+    }
+  ],
+  "navbarList": [
+    {
+      "link": "https://www.libertaddigital.com/",
+      "title": "linkedin",
+      "color": "text-lightBlue-600"
+    },
+    { "link": "", "title": "twitter", "color": "text-pink-400" },
+    { "link": "", "title": "github", "color": "text-blueGray-800" }
+  ],
+  "mainBackground": "/img/main-background.avif"
+}
