@@ -4,7 +4,7 @@ import re
 from mailserver import activate_server
 
 
-class Formfield:
+class FormField:
 
     def __init__(self, name, value, regex):
         self.name = name
@@ -19,23 +19,23 @@ messageRegex = re.compile(r"^.{3,50}$")
 
 def send_email(applicant):
     inputFields = [
-        Formfield("fname", applicant.get("fname"), fnameRegex),
-        Formfield("email", applicant.get("email"), emailRegex),
-        Formfield("message", applicant.get("message"), messageRegex)
+        FormField("fname", applicant.get("fname"), fnameRegex),
+        FormField("email", applicant.get("email"), emailRegex),
+        FormField("message", applicant.get("message"), messageRegex)
     ]
 
     errors = []
-    fieldsdict = {}
+    fieldsDict = {}
 
     for field in inputFields:
         if not re.fullmatch(field.regex, field.value):
             errors.append(field.name)
         else:
-            fieldsdict[field.name] = field.value
+            fieldsDict[field.name] = field.value
 
     if not len(errors) > 0:
-        activate_server(fieldsdict["email"])
-        return fieldsdict, 201
+        activate_server(fieldsDict["email"])
+        return fieldsDict, 201
     else:
         abort(
             406,
