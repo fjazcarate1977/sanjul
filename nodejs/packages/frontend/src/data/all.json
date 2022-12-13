@@ -49,5 +49,22 @@
       "icon": "person-snowboarding",
       "color": "cyan-500"
     }
-  ]
+  ],
+  "introduction": {
+    "image": "/img/canvas.avif",
+    "keys": [
+      {
+        "i18nref": "introduction.keys.performance",
+        "icon": "jet-fighter-up"
+      },
+      {
+        "i18nref": "introduction.keys.code",
+        "icon": "pen-nib"
+      },
+      {
+        "i18nref": "introduction.keys.test",
+        "icon": "vials"
+      }
+    ]
+  }
 }

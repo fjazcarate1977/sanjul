@@ -35,5 +35,14 @@
 			"title": "Mente inquieta",
 			"description": "Nuestra forma de trabajar nos lleva a luchar por cada proyecto, intentando mejorar el producto y nuestra valía."
 		}
+	},
+	"introduction": {
+		"title": "Llevaremos su empresa al siguiente nivel",
+		"description": "Nuestra manera de trabajar es como un lienzo en blanco. Analizamos las necesidades reales del proyecto y buscamos las soluciones tecnológicas óptimas para brindar la más alta calidad.",
+		"keys": {
+			"performance": "Estándares de alto rendimiento",
+			"code": "Código de calidad y simplificado",
+			"test": "Herramientas de testeo avanzadas"
+		}
 	}
 }

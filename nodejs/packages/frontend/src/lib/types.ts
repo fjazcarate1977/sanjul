@@ -8,6 +8,11 @@ interface DropdownLinkProps {
   link: string;
 }
 
+interface IntroductionKeysProps {
+  i18nref: string;
+  icon: string;
+}
+
 type SocialNetwork = 'linkedin' | 'twitter' | 'github';
 type SocialNetworkColors =
   | 'text-lightBlue-600'
@@ -31,9 +36,15 @@ export interface MainIdeasListProps {
   color: string;
 }
 
+export interface IntroductionProps {
+  image: string;
+  keys: IntroductionKeysProps[];
+}
+
 export interface DataProps {
   navBarList: NavBarLinkProps[];
   dropdownList: DropdownProps[];
   mainBackground: string;
   mainIdeasList: MainIdeasListProps[];
+  introduction: IntroductionProps;
 }

@@ -35,5 +35,14 @@
 			"title": "Restless mind",
 			"description": "Our way of work drive us to fight for each project, triying to improve the product and ourselves."
 		}
+	},
+	"introduction": {
+		"title": "Bring your company to the next level",
+		"description": "Our approach is like an empty canvas. We analyze the customer's real requirements and search for optimum technological solutions, bringing a high quality product.",
+		"keys": {
+			"performance": "Higher performance standar",
+			"code": "Code quality and simplicity",
+			"test": "Advanced testing tools"
+		}
 	}
 }
