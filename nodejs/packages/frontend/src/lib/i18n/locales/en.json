@@ -1,48 +1,62 @@
 {
-	"dropdownList": {
-		"brotherhood": {
-			"title": "Brotherhood",
-			"links": {
-				"fran": "Francisco (Creativity)",
-				"leon": "León (Talent)"
+	"commons": {
+		"dropdownList": {
+			"brotherhood": {
+				"title": "Brotherhood",
+				"links": {
+					"fran": "Francisco (Creativity)",
+					"leon": "León (Talent)"
+				}
+			},
+			"others": {
+				"philosophy": "Our philosophy",
+				"contact": "Contact Us"
 			}
 		},
-		"others": {
-			"philosophy": "Our philosophy",
-			"contact": "Contact Us"
+		"navigation": "Navigation"
+	},
+	"organisms": {
+		"navBar": {
+			"locale": {
+				"es-ES": "español",
+				"en-US": "english"
+			}
+		},
+		"footer": {
+			"copyright": "© Copyright {date} Sanjul."
 		}
 	},
-	"locale": {
-		"es-ES": "español",
-		"en-US": "english"
-	},
-	"mainHeader": {
-		"title": "High Quality Computer Engineering",
-		"description": "Development of applications and solutions with high quality and performance standards"
-	},
-	"navigation": "Navigation",
-	"copyright": "© Copyright {date} Sanjul.",
-	"mainIdeasList": {
-		"experience": {
-			"title": "Years of experience",
-			"description": "We have more than 15 years of experience, providing us with great knowledge to apply in the projects."
-		},
-		"innovation": {
-			"title": "Innovation",
-			"description": "On every project that we start, we study all the new technologies in order to give the best solution."
-		},
-		"restless": {
-			"title": "Restless mind",
-			"description": "Our way of work drive us to fight for each project, triying to improve the product and ourselves."
+	"atoms": {
+		"header": {
+			"title": "High Quality Computer Engineering",
+			"description": "Development of applications and solutions with high quality and performance standards"
 		}
 	},
-	"introduction": {
-		"title": "Bring your company to the next level",
-		"description": "Our approach is like an empty canvas. We analyze the customer's real requirements and search for optimum technological solutions, bringing a high quality product.",
-		"keys": {
-			"performance": "Higher performance standar",
-			"code": "Code quality and simplicity",
-			"test": "Advanced testing tools"
+	"molecules": {
+		"ideasCard": {
+			"ideasCardList": {
+				"experience": {
+					"title": "Years of experience",
+					"description": "We have more than 15 years of experience, providing us with great knowledge to apply in the projects."
+				},
+				"innovation": {
+					"title": "Innovation",
+					"description": "On every project that we start, we study all the new technologies in order to give the best solution."
+				},
+				"restless": {
+					"title": "Restless mind",
+					"description": "Our way of work drive us to fight for each project, triying to improve the product and ourselves."
+				}
+			}
+		},
+		"introductionCard": {
+			"title": "Bring your company to the next level",
+			"description": "Our approach is like an empty canvas. We analyze the customer's real requirements and search for optimum technological solutions, bringing a high quality product.",
+			"keys": {
+				"performance": "Higher performance standar",
+				"code": "Code quality and simplicity",
+				"test": "Advanced testing tools"
+			}
 		}
 	}
 }

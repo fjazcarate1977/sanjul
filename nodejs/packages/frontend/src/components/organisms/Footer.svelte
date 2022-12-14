@@ -60,7 +60,7 @@
             <span
               class="block uppercase text-blueGray-500 text-sm font-semibold mb-2"
             >
-              {$_('navigation')}
+              {$_('commons.navigation')}
             </span>
             <ul class="list-unstyled">
               {#each dropdownList as list}
@@ -84,7 +84,7 @@
     <div class="flex flex-wrap items-center md:justify-between justify-center">
       <div class="w-full md:w-4/12 px-4 mx-auto text-center">
         <div class="text-sm text-blueGray-500 font-semibold py-1">
-          {$_('copyright', { values: { date } })}
+          {$_('organisms.footer.copyright', { values: { date } })}
         </div>
       </div>
     </div>

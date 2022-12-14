@@ -16,9 +16,11 @@
       >
         <i class="fas fa-rocket text-xl" />
       </div>
-      <h3 class="text-3xl font-semibold">{$_('introduction.title')}</h3>
+      <h3 class="text-3xl font-semibold">
+        {$_('molecules.introductionCard.title')}
+      </h3>
       <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
-        {$_('introduction.description')}
+        {$_('molecules.introductionCard.description')}
       </p>
       <ul class="list-none mt-6">
         {#each keys as { i18nref, icon }}

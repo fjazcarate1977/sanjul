@@ -31,7 +31,7 @@
     bind:this={btnDropdownRef}
     on:click={toggleDropdown}
   >
-    {$_('navigation')}
+    {$_('commons.navigation')}
   </a>
   <div
     bind:this={popoverDropdownRef}

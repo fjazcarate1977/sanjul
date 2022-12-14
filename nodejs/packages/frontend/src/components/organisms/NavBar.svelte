@@ -93,7 +93,7 @@
             on:click={changeLocale}
           >
             <i class="fas fa-language" />
-            {$_(`locale.${otherLocale}`)}
+            {$_(`organisms.navBar.locale.${otherLocale}`)}
           </button>
         </li>
       </ul>

@@ -2,16 +2,22 @@
   "layout": {
     "dropdownList": [
       {
-        "i18nref": "dropdownList.brotherhood.title",
+        "i18nref": "commons.dropdownList.brotherhood.title",
         "links": [
-          { "link": "", "i18nref": "dropdownList.brotherhood.links.fran" },
-          { "link": "", "i18nref": "dropdownList.brotherhood.links.leon" }
+          {
+            "link": "",
+            "i18nref": "commons.dropdownList.brotherhood.links.fran"
+          },
+          {
+            "link": "",
+            "i18nref": "commons.dropdownList.brotherhood.links.leon"
+          }
         ]
       },
       {
         "links": [
-          { "link": "", "i18nref": "dropdownList.others.philosophy" },
-          { "link": "", "i18nref": "dropdownList.others.contact" }
+          { "link": "", "i18nref": "commons.dropdownList.others.philosophy" },
+          { "link": "", "i18nref": "commons.dropdownList.others.contact" }
         ]
       }
     ],
@@ -31,24 +37,24 @@
       "ideasCardList": [
         {
           "i18nref": {
-            "title": "mainIdeasList.experience.title",
-            "description": "mainIdeasList.experience.description"
+            "title": "molecules.ideasCard.ideasCardList.experience.title",
+            "description": "molecules.ideasCard.ideasCardList.experience.description"
           },
           "icon": "puzzle-piece",
           "color": "teal-500"
         },
         {
           "i18nref": {
-            "title": "mainIdeasList.innovation.title",
-            "description": "mainIdeasList.innovation.description"
+            "title": "molecules.ideasCard.ideasCardList.innovation.title",
+            "description": "molecules.ideasCard.ideasCardList.innovation.description"
           },
           "icon": "lightbulb",
           "color": "rose-500"
         },
         {
           "i18nref": {
-            "title": "mainIdeasList.restless.title",
-            "description": "mainIdeasList.restless.description"
+            "title": "molecules.ideasCard.ideasCardList.restless.title",
+            "description": "molecules.ideasCard.ideasCardList.restless.description"
           },
           "icon": "person-snowboarding",
           "color": "cyan-500"
@@ -58,15 +64,15 @@
         "image": "/img/canvas.avif",
         "keys": [
           {
-            "i18nref": "introduction.keys.performance",
+            "i18nref": "molecules.introductionCard.keys.performance",
             "icon": "jet-fighter-up"
           },
           {
-            "i18nref": "introduction.keys.code",
+            "i18nref": "molecules.introductionCard.keys.code",
             "icon": "pen-nib"
           },
           {
-            "i18nref": "introduction.keys.test",
+            "i18nref": "molecules.introductionCard.keys.test",
             "icon": "vials"
           }
         ]
