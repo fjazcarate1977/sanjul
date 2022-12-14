@@ -1,11 +1,12 @@
 <script lang="ts">
-  import type { DataProps } from '$lib/types';
+  import type { MainSectionProps } from '$lib/types';
 
-  import data from '@data/all.json';
   import IntroductionCard from '@molecules/IntroductionCard.svelte';
   import MainIdeas from '@molecules/MainIdeas.svelte';
 
-  const { mainIdeasList, introduction } = data as DataProps;
+  export let mainSection: MainSectionProps;
+
+  const { mainIdeasList, introduction } = mainSection;
 </script>
 
 <section class="pb-20 bg-blueGray-200 -mt-24">

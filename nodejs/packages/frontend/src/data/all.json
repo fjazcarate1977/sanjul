@@ -1,70 +1,76 @@
 {
-  "dropdownList": [
-    {
-      "i18nref": "dropdownList.brotherhood.title",
-      "links": [
-        { "link": "", "i18nref": "dropdownList.brotherhood.links.fran" },
-        { "link": "", "i18nref": "dropdownList.brotherhood.links.leon" }
-      ]
-    },
-    {
-      "links": [
-        { "link": "", "i18nref": "dropdownList.others.philosophy" },
-        { "link": "", "i18nref": "dropdownList.others.contact" }
-      ]
-    }
-  ],
-  "navBarList": [
-    {
-      "link": "https://www.libertaddigital.com/",
-      "title": "linkedin",
-      "color": "text-lightBlue-600"
-    },
-    { "link": "", "title": "twitter", "color": "text-pink-400" },
-    { "link": "", "title": "github", "color": "text-blueGray-800" }
-  ],
-  "mainBackground": "/img/main-background.avif",
-  "mainIdeasList": [
-    {
-      "i18nref": {
-        "title": "mainIdeasList.experience.title",
-        "description": "mainIdeasList.experience.description"
-      },
-      "icon": "puzzle-piece",
-      "color": "teal-500"
-    },
-    {
-      "i18nref": {
-        "title": "mainIdeasList.innovation.title",
-        "description": "mainIdeasList.innovation.description"
-      },
-      "icon": "lightbulb",
-      "color": "rose-500"
-    },
-    {
-      "i18nref": {
-        "title": "mainIdeasList.restless.title",
-        "description": "mainIdeasList.restless.description"
-      },
-      "icon": "person-snowboarding",
-      "color": "cyan-500"
-    }
-  ],
-  "introduction": {
-    "image": "/img/canvas.avif",
-    "keys": [
+  "layout": {
+    "dropdownList": [
       {
-        "i18nref": "introduction.keys.performance",
-        "icon": "jet-fighter-up"
+        "i18nref": "dropdownList.brotherhood.title",
+        "links": [
+          { "link": "", "i18nref": "dropdownList.brotherhood.links.fran" },
+          { "link": "", "i18nref": "dropdownList.brotherhood.links.leon" }
+        ]
       },
       {
-        "i18nref": "introduction.keys.code",
-        "icon": "pen-nib"
-      },
-      {
-        "i18nref": "introduction.keys.test",
-        "icon": "vials"
+        "links": [
+          { "link": "", "i18nref": "dropdownList.others.philosophy" },
+          { "link": "", "i18nref": "dropdownList.others.contact" }
+        ]
       }
+    ],
+    "navBarList": [
+      {
+        "link": "https://www.libertaddigital.com/",
+        "title": "linkedin",
+        "color": "text-lightBlue-600"
+      },
+      { "link": "", "title": "twitter", "color": "text-pink-400" },
+      { "link": "", "title": "github", "color": "text-blueGray-800" }
     ]
+  },
+  "page": {
+    "mainBackground": "/img/main-background.avif",
+    "mainSection": {
+      "mainIdeasList": [
+        {
+          "i18nref": {
+            "title": "mainIdeasList.experience.title",
+            "description": "mainIdeasList.experience.description"
+          },
+          "icon": "puzzle-piece",
+          "color": "teal-500"
+        },
+        {
+          "i18nref": {
+            "title": "mainIdeasList.innovation.title",
+            "description": "mainIdeasList.innovation.description"
+          },
+          "icon": "lightbulb",
+          "color": "rose-500"
+        },
+        {
+          "i18nref": {
+            "title": "mainIdeasList.restless.title",
+            "description": "mainIdeasList.restless.description"
+          },
+          "icon": "person-snowboarding",
+          "color": "cyan-500"
+        }
+      ],
+      "introduction": {
+        "image": "/img/canvas.avif",
+        "keys": [
+          {
+            "i18nref": "introduction.keys.performance",
+            "icon": "jet-fighter-up"
+          },
+          {
+            "i18nref": "introduction.keys.code",
+            "icon": "pen-nib"
+          },
+          {
+            "i18nref": "introduction.keys.test",
+            "icon": "vials"
+          }
+        ]
+      }
+    }
   }
 }

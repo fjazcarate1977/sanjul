@@ -20,7 +20,9 @@
     await waitLocale();
   };
 
-  const { navBarList, dropdownList } = data as DataProps;
+  const {
+    layout: { navBarList, dropdownList }
+  } = data as DataProps;
 </script>
 
 {#if !$isLoading}

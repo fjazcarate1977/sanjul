@@ -10,13 +10,15 @@
   const team3 = 'img/team-3-800x800.jpg';
   const team4 = 'img/team-4-470x470.png';
 
-  const { mainBackground } = data as DataProps;
+  const {
+    page: { mainBackground, mainSection }
+  } = data as DataProps;
 </script>
 
 <div>
   <main>
     <MainHeader {mainBackground} />
-    <MainSection />
+    <MainSection {mainSection} />
 
     <section class="relative py-20">
       <div

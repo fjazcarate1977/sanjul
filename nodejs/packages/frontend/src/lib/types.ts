@@ -1,16 +1,27 @@
-export interface DropdownProps {
-  i18nref?: string;
-  links: DropdownLinkProps[];
-}
-
-interface DropdownLinkProps {
-  i18nref: string;
-  link: string;
+interface I18nrefProps {
+  title: string;
+  description: string;
 }
 
 interface IntroductionKeysProps {
   i18nref: string;
   icon: string;
+}
+
+export interface MainIdeasListProps {
+  i18nref: I18nrefProps;
+  icon: string;
+  color: string;
+}
+
+export interface IntroductionProps {
+  image: string;
+  keys: IntroductionKeysProps[];
+}
+
+export interface MainSectionProps {
+  mainIdeasList: MainIdeasListProps[];
+  introduction: IntroductionProps;
 }
 
 type SocialNetwork = 'linkedin' | 'twitter' | 'github';
@@ -25,26 +36,27 @@ export interface NavBarLinkProps {
   color: SocialNetworkColors;
 }
 
-export interface I18nrefProps {
-  title: string;
-  description: string;
+interface DropdownLinkProps {
+  i18nref: string;
+  link: string;
 }
 
-export interface MainIdeasListProps {
-  i18nref: I18nrefProps;
-  icon: string;
-  color: string;
+export interface DropdownProps {
+  i18nref?: string;
+  links: DropdownLinkProps[];
 }
 
-export interface IntroductionProps {
-  image: string;
-  keys: IntroductionKeysProps[];
+interface LayoutProps {
+  navBarList: NavBarLinkProps[];
+  dropdownList: DropdownProps[];
+}
+
+interface PageProps {
+  mainBackground: string;
+  mainSection: MainSectionProps;
 }
 
 export interface DataProps {
-  navBarList: NavBarLinkProps[];
-  dropdownList: DropdownProps[];
-  mainBackground: string;
-  mainIdeasList: MainIdeasListProps[];
-  introduction: IntroductionProps;
+  layout: LayoutProps;
+  page: PageProps;
 }
