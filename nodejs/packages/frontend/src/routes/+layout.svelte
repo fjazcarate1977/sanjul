@@ -11,7 +11,7 @@
 
   import data from '@data/all.json';
   import Footer from '@organisms/Footer.svelte';
-  import Navbar from '@organisms/NavegationBar.svelte';
+  import Navbar from '@organisms/NavBar.svelte';
 
   export const load = async () => {
     if (browser) {

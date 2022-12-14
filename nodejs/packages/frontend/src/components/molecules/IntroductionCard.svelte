@@ -1,11 +1,11 @@
 <script lang="ts">
   import { _ } from 'svelte-i18n';
 
-  import type { IntroductionProps } from '$lib/types';
+  import type { IntroductionCardProps } from '$lib/types';
 
-  export let introduction: IntroductionProps;
+  export let introductionCard: IntroductionCardProps;
 
-  const { image, keys } = introduction;
+  const { image, keys } = introductionCard;
 </script>
 
 <div class="flex flex-wrap items-center mt-32">

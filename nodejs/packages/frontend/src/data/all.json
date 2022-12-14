@@ -28,7 +28,7 @@
   "page": {
     "mainBackground": "/img/main-background.avif",
     "mainSection": {
-      "mainIdeasList": [
+      "ideasCardList": [
         {
           "i18nref": {
             "title": "mainIdeasList.experience.title",
@@ -54,7 +54,7 @@
           "color": "cyan-500"
         }
       ],
-      "introduction": {
+      "introductionCard": {
         "image": "/img/canvas.avif",
         "keys": [
           {

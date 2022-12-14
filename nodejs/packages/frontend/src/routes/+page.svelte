@@ -1,8 +1,8 @@
 <script lang="ts">
   import type { DataProps } from '$lib/types';
 
+  import MainHeader from '@atoms/Header.svelte';
   import data from '@data/all.json';
-  import MainHeader from '@molecules/MainHeader.svelte';
   import MainSection from '@organisms/MainSection.svelte';
 
   const team1 = 'img/team-1-800x800.jpg';

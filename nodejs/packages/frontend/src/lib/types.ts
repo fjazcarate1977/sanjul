@@ -8,20 +8,20 @@ interface IntroductionKeysProps {
   icon: string;
 }
 
-export interface MainIdeasListProps {
+export interface IdeasCardListProps {
   i18nref: I18nrefProps;
   icon: string;
   color: string;
 }
 
-export interface IntroductionProps {
+export interface IntroductionCardProps {
   image: string;
   keys: IntroductionKeysProps[];
 }
 
 export interface MainSectionProps {
-  mainIdeasList: MainIdeasListProps[];
-  introduction: IntroductionProps;
+  ideasCardList: IdeasCardListProps[];
+  introductionCard: IntroductionCardProps;
 }
 
 type SocialNetwork = 'linkedin' | 'twitter' | 'github';

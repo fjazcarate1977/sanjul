@@ -1,15 +1,15 @@
 <script lang="ts">
   import { _ } from 'svelte-i18n';
 
-  import type { MainIdeasListProps } from '$lib/types';
+  import type { IdeasCardListProps } from '$lib/types';
 
-  export let mainIdeasList: MainIdeasListProps[];
+  export let ideasCardList: IdeasCardListProps[];
 
-  const ideasLength = mainIdeasList.length - 1;
+  const ideasLength = ideasCardList.length - 1;
 </script>
 
 <div class="flex flex-wrap">
-  {#each mainIdeasList as { icon, color, i18nref }, index}
+  {#each ideasCardList as { icon, color, i18nref }, index}
     <div
       class:lg:pt-12={index === 0}
       class:pt-6={index === ideasLength || index === 0}
@@ -34,7 +34,7 @@
       </div>
     </div>
   {/each}
-  {#if !mainIdeasList}
+  {#if !ideasCardList}
     <span class="bg-cyan-500 bg-rose-500 bg-teal-500" />
   {/if}
 </div>
