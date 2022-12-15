@@ -16,8 +16,14 @@
       },
       {
         "links": [
-          { "link": "", "i18nref": "commons.dropdownList.others.philosophy" },
-          { "link": "", "i18nref": "commons.dropdownList.others.contact" }
+          {
+            "link": "",
+            "i18nref": "commons.dropdownList.others.philosophy"
+          },
+          {
+            "link": "",
+            "i18nref": "commons.dropdownList.others.contact"
+          }
         ]
       }
     ],
@@ -25,10 +31,18 @@
       {
         "link": "https://www.libertaddigital.com/",
         "title": "linkedin",
-        "color": "text-lightBlue-600"
+        "color": "lightBlue-600"
       },
-      { "link": "", "title": "twitter", "color": "text-pink-400" },
-      { "link": "", "title": "github", "color": "text-blueGray-800" }
+      {
+        "link": "",
+        "title": "twitter",
+        "color": "pink-400"
+      },
+      {
+        "link": "",
+        "title": "github",
+        "color": "blueGray-800"
+      }
     ]
   },
   "page": {
@@ -117,6 +131,42 @@
               "technology": "js",
               "link": "",
               "title": "JavaScript"
+            }
+          ]
+        }
+      ],
+      "brotherhoodCard": [
+        {
+          "img": "img/fran.avif",
+          "name": "León Azcárate",
+          "position": "Founder and CEO",
+          "socialMedia": [
+            {
+              "link": "",
+              "title": "linkedin",
+              "color": "lightBlue-600"
+            }
+          ]
+        },
+        {
+          "img": "img/fran.avif",
+          "name": "Francisco Azcárate",
+          "position": "Founder and CEO",
+          "socialMedia": [
+            {
+              "link": "",
+              "title": "linkedin",
+              "color": "lightBlue-600"
+            },
+            {
+              "link": "",
+              "title": "twitter",
+              "color": "pink-400"
+            },
+            {
+              "link": "",
+              "title": "github",
+              "color": "blueGray-800"
             }
           ]
         }

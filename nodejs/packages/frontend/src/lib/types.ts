@@ -27,12 +27,9 @@ export interface MainSectionProps {
 }
 
 type SocialNetwork = 'linkedin' | 'twitter' | 'github';
-type SocialNetworkColors =
-  | 'text-lightBlue-600'
-  | 'text-pink-400'
-  | 'text-blueGray-800';
+type SocialNetworkColors = 'lightBlue-600' | 'pink-400' | 'blueGray-800';
 
-export interface NavBarLinkProps {
+export interface SocialMediaProps {
   title: SocialNetwork;
   link: string;
   color: SocialNetworkColors;
@@ -49,7 +46,7 @@ export interface DropdownProps {
 }
 
 interface LayoutProps {
-  navBarList: NavBarLinkProps[];
+  navBarList: SocialMediaProps[];
   dropdownList: DropdownProps[];
 }
 
@@ -66,8 +63,16 @@ export interface TechnologiesCardProps {
   technologies: TechnologiesProps[];
 }
 
+export interface BrotherhoodCardProps {
+  img: string;
+  name: string;
+  position: string;
+  socialMedia: SocialMediaProps[];
+}
+
 export interface CenterSectionProps {
   technologiesCard: TechnologiesCardProps[];
+  brotherhoodCard: BrotherhoodCardProps[];
 }
 
 interface PageProps {

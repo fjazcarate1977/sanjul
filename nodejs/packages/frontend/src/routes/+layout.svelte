@@ -9,9 +9,10 @@
 
   import type { DataProps } from '$lib/types';
 
-  import data from '@data/all.json';
   import Footer from '@organisms/Footer.svelte';
   import Navbar from '@organisms/NavBar.svelte';
+
+  import data from '@data/all.json';
 
   export const load = async () => {
     if (browser) {
