@@ -71,7 +71,7 @@
   "settings": {
     "import/internal-regex": "^((@organisms)|(@molecules)|(@atoms)|(@data)|($lib))/.+"
   },
-  "ignorePatterns": ["nodejs/packages/*/**/*.config.ts", "nodejs/packages/*/**/*.server.ts"],
+  "ignorePatterns": ["nodejs/packages/*/**/*.config.ts", "nodejs/packages/*/**/*.server.ts", "nodejs/packages/*/**/enums.ts"],
   "overrides": [
     {
       "files": ["nodejs/packages/frontend/**/*.svelte"],

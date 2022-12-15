@@ -1,3 +1,5 @@
+import type { DividerPosition } from './enums';
+
 interface I18nrefProps {
   title: string;
   description: string;
@@ -51,12 +53,33 @@ interface LayoutProps {
   dropdownList: DropdownProps[];
 }
 
+type TechnologiesCardPosition = 'left' | 'right';
+
+interface TechnologiesProps {
+  technology: string;
+  link: string;
+  title: string;
+}
+
+export interface TechnologiesCardProps {
+  position: TechnologiesCardPosition;
+  technologies: TechnologiesProps[];
+}
+
+export interface CenterSectionProps {
+  technologiesCard: TechnologiesCardProps[];
+}
+
 interface PageProps {
   mainBackground: string;
   mainSection: MainSectionProps;
+  centerSection: CenterSectionProps;
 }
 
 export interface DataProps {
   layout: LayoutProps;
   page: PageProps;
 }
+
+export type DividerPositionTypes = keyof typeof DividerPosition;
+export type DividerColorTypes = 'text-blueGray-200' | 'text-white';

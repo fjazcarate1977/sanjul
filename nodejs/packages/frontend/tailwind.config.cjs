@@ -11,7 +11,13 @@ module.exports = {
         heartwarming: ['heart_warmingregular']
       },
       colors: {
-        ...colors
+        ...colors,
+        docker: '#0db7ed',
+        python: '#646464',
+        'node-js': '#6cc24a',
+        linux: '#cc0000',
+        react: '#00d8ff',
+        js: '#f7df1e'
       },
       minHeight: {
         'screen-75': '75vh'

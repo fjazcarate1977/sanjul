@@ -33,5 +33,9 @@
     </div>
   </div>
 
-  <Divider />
+  <Divider
+    additionalClases="h-70-px"
+    position={'Bottom'}
+    color="text-blueGray-200"
+  />
 </div>

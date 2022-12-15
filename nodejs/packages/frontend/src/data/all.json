@@ -77,6 +77,50 @@
           }
         ]
       }
+    },
+    "centerSection": {
+      "technologiesCard": [
+        {
+          "position": "left",
+          "technologies": [
+            {
+              "technology": "docker",
+              "link": "",
+              "title": "Docker"
+            },
+            {
+              "technology": "python",
+              "link": "",
+              "title": "Python"
+            },
+            {
+              "technology": "node-js",
+              "link": "",
+              "title": "Node JS"
+            }
+          ]
+        },
+        {
+          "position": "right",
+          "technologies": [
+            {
+              "technology": "linux",
+              "link": "",
+              "title": "Linux"
+            },
+            {
+              "technology": "react",
+              "link": "",
+              "title": "React"
+            },
+            {
+              "technology": "js",
+              "link": "",
+              "title": "JavaScript"
+            }
+          ]
+        }
+      ]
     }
   }
 }
