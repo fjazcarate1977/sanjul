@@ -13,10 +13,7 @@
 </script>
 
 <footer class="relative bg-blueGray-200 pt-8 pb-6">
-  <Divider
-    position={'Top'}
-    color="text-blueGray-200"
-  />
+  <Divider position={'Top'} color="text-blueGray-200" />
   <div class="container mx-auto px-4">
     <div class="flex flex-wrap text-center lg:text-left">
       <div class="w-full lg:w-6/12 px-4">
@@ -25,7 +22,7 @@
           Find us on any of these platforms, we respond 1-2 business days.
         </h5>
         <div class="mt-6 lg:mb-0 mb-6">
-          {#each navBarList as {color, link, title} }
+          {#each navBarList as { color, link, title }}
             <button
               class="bg-white text-{color} shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
               type="button"

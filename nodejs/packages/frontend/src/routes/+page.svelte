@@ -9,7 +9,7 @@
   import data from '@data/all.json';
 
   const {
-    page: { mainBackground, mainSection, centerSection }
+    page: { mainBackground, mainSection, centerSection, formSection }
   } = data as DataProps;
 </script>
 
@@ -18,6 +18,6 @@
     <MainHeader {mainBackground} />
     <MainSection {mainSection} />
     <CenterSection {centerSection} />
-    <FormSection />
+    <FormSection {formSection} />
   </main>
 </div>

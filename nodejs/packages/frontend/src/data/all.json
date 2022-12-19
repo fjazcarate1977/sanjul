@@ -171,6 +171,25 @@
           ]
         }
       ]
-    }
+    },
+    "formSection": [
+      {
+        "id": "fname",
+        "i18nref": "organisms.formSection.fields.fname",
+        "type": "name",
+        "isTextArea": false
+      },
+      {
+        "id": "email",
+        "i18nref": "organisms.formSection.fields.email",
+        "type": "email",
+        "isTextArea": false
+      },
+      {
+        "id": "message",
+        "i18nref": "organisms.formSection.fields.message",
+        "isTextArea": true
+      }
+    ]
   }
 }

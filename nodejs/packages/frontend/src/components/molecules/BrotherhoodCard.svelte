@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { goToSocialMedia } from '$lib/helpers';
+  import { goToSocialMedia } from '$lib/helpers';
   import type { BrotherhoodCardProps } from '$lib/types';
 
   export let brotherhoodCard: BrotherhoodCardProps[];

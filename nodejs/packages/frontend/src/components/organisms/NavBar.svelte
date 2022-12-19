@@ -47,7 +47,7 @@
       class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
     >
       <a
-        class="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase font-marketdeco text-2xl"
+        class="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase font-marketdeco text-3xl"
         href="/"
       >
         SanJul
@@ -70,7 +70,7 @@
         <li class="flex items-center">
           <Dropdown {dropdownList} />
         </li>
-        {#each navBarList as {link, title}}
+        {#each navBarList as { link, title }}
           <li class="flex items-center">
             <a
               class="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"

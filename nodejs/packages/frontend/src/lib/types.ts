@@ -75,15 +75,34 @@ export interface CenterSectionProps {
   brotherhoodCard: BrotherhoodCardProps[];
 }
 
+type InputTypes = 'name' | 'email';
+
+export interface FormSectionProps {
+  id: string;
+  i18nref: string;
+  type?: InputTypes;
+  isTextArea: boolean;
+}
+
 interface PageProps {
   mainBackground: string;
   mainSection: MainSectionProps;
   centerSection: CenterSectionProps;
+  formSection: FormSectionProps[];
 }
 
 export interface DataProps {
   layout: LayoutProps;
   page: PageProps;
+}
+
+interface FormObjectNestedProps {
+  value?: string;
+  error?: boolean;
+}
+
+export interface FormObjectProps {
+  [key: string]: FormObjectNestedProps;
 }
 
 export type DividerPositionTypes = keyof typeof DividerPosition;
