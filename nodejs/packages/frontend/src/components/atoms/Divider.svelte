@@ -2,7 +2,7 @@
   import type { DividerPositionTypes, DividerColorTypes } from '$lib/types';
 
   export let position: DividerPositionTypes;
-  export let additionalClases: string;
+  export let additionalClases = '-mt-20 h-20';
   export let color: DividerColorTypes;
 </script>
 

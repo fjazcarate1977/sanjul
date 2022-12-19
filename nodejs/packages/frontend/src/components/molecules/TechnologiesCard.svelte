@@ -29,7 +29,11 @@
                     />
                   </div>
 
-                  <p class="font-heartwarming text-lg text-white mt-4 font-semibold">{title}</p>
+                  <p
+                    class="font-heartwarming text-lg text-white mt-4 font-semibold"
+                  >
+                    {title}
+                  </p>
                 </div>
               </a>
             {/each}

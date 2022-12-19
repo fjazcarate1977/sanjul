@@ -87,4 +87,7 @@ export interface DataProps {
 }
 
 export type DividerPositionTypes = keyof typeof DividerPosition;
-export type DividerColorTypes = 'text-blueGray-200' | 'text-white';
+export type DividerColorTypes =
+  | 'text-blueGray-200'
+  | 'text-white'
+  | 'text-blueGray-800';

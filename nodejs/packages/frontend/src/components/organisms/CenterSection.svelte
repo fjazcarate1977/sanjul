@@ -11,7 +11,7 @@
 </script>
 
 <section class="relative">
-  <Divider additionalClases="-mt-20 h-20" position={'Top'} color="text-white" />
+  <Divider position={'Top'} color="text-white" />
   <TechnologiesCard {technologiesCard} />
   <BrotherhoodCard {brotherhoodCard} />
 </section>

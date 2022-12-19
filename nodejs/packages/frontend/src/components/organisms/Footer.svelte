@@ -1,8 +1,7 @@
 <script lang="ts">
   import { _ } from 'svelte-i18n';
 
-  import { goto } from '$app/navigation';
-
+  import { goToSocialMedia } from '$lib/helpers';
   import type { DropdownProps, SocialMediaProps } from '$lib/types';
 
   import Divider from '@atoms/Divider.svelte';
@@ -11,15 +10,10 @@
   export let dropdownList: DropdownProps[];
 
   const date = new Date().getFullYear();
-
-  const goToSocialMedia = async (socialLink: string) => {
-    await goto(socialLink);
-  };
 </script>
 
 <footer class="relative bg-blueGray-200 pt-8 pb-6">
   <Divider
-    additionalClases="-mt-20 h-20"
     position={'Top'}
     color="text-blueGray-200"
   />
@@ -31,13 +25,13 @@
           Find us on any of these platforms, we respond 1-2 business days.
         </h5>
         <div class="mt-6 lg:mb-0 mb-6">
-          {#each navBarList as link}
+          {#each navBarList as {color, link, title} }
             <button
-              class="bg-white text-{link.color} shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              class="bg-white text-{color} shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
               type="button"
-              on:click={() => goToSocialMedia(link.link)}
+              on:click={() => goToSocialMedia(link)}
             >
-              <i class="fab fa-{link.title}" />
+              <i class="fab fa-{title}" />
             </button>
           {/each}
         </div>

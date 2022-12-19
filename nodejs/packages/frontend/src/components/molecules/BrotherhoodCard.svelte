@@ -1,10 +1,11 @@
 <script lang="ts">
+    import { goToSocialMedia } from '$lib/helpers';
   import type { BrotherhoodCardProps } from '$lib/types';
 
   export let brotherhoodCard: BrotherhoodCardProps[];
 </script>
 
-<div class="container mx-auto px-4 pb-48">
+<div class="container mx-auto px-4 pb-32 lg:pb-48 ">
   <div class="flex flex-wrap justify-center">
     {#each brotherhoodCard as { img, name, position, socialMedia }}
       <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
@@ -24,6 +25,7 @@
                 <button
                   class="bg-{color} text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                   type="button"
+                  on:click={() => goToSocialMedia(link)}
                 >
                   <i class="fab fa-{title}" />
                 </button>
@@ -33,8 +35,5 @@
         </div>
       </div>
     {/each}
-    {#if !brotherhoodCard}
-      <span class="bg-pink-400" />
-    {/if}
   </div>
 </div>

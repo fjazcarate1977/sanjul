@@ -3,14 +3,14 @@
 
   import { getNewLocale } from '$lib/helpers';
   import { storeLocale } from '$lib/stores';
-  import type { DropdownProps, NavBarLinkProps } from '$lib/types';
+  import type { DropdownProps, SocialMediaProps } from '$lib/types';
 
   import Dropdown from '@molecules/Dropdown.svelte';
 
   let navBarOpen = false;
 
   export let dropdownList: DropdownProps[];
-  export let navBarList: NavBarLinkProps[];
+  export let navBarList: SocialMediaProps[];
 
   function setNavBarOpen() {
     navBarOpen = !navBarOpen;
@@ -70,18 +70,18 @@
         <li class="flex items-center">
           <Dropdown {dropdownList} />
         </li>
-        {#each navBarList as link}
+        {#each navBarList as {link, title}}
           <li class="flex items-center">
             <a
               class="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-              href={link.link}
+              href={link}
               target="_blank"
               rel="noreferrer"
             >
               <i
-                class="lg:text-blueGray-200 text-blueGray-400 fab fa-{link.title} text-lg leading-lg"
+                class="lg:text-blueGray-200 text-blueGray-400 fab fa-{title} text-lg leading-lg"
               />
-              <span class="lg:hidden inline-block ml-2">{link.title}</span>
+              <span class="lg:hidden inline-block ml-2">{title}</span>
             </a>
           </li>
         {/each}
