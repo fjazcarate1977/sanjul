@@ -81,7 +81,7 @@ export interface FormSectionProps {
   id: string;
   i18nref: string;
   type?: InputTypes;
-  isTextArea: boolean;
+  tag: string;
 }
 
 interface PageProps {

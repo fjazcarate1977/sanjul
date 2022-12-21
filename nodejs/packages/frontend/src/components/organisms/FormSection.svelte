@@ -1,19 +1,23 @@
 <script lang="ts">
-  import { _ } from 'svelte-i18n';
-
+  import { sendContactData } from '$lib/helpers';
   import * as regex from '$lib/regex';
   import type { FormSectionProps, FormObjectProps } from '$lib/types';
 
   import Divider from '@atoms/Divider.svelte';
+  import Input from '@atoms/Input.svelte';
 
   export let formSection: FormSectionProps[];
 
   let formData: FormObjectProps = {};
   let firstTime = true;
+  let showSpinner = false;
+  let showSuccessMessage = false;
+
+  const checkErrors = () => !Object.values(formData).find((data) => data.error);
 
   $: allFilled =
     formSection.length === Object.keys(formData).length &&
-    (!Object.values(formData).find((data) => data.error) || firstTime);
+    (checkErrors() || firstTime);
 
   const handleInput = (e: Event, id: string): void => {
     const value = (e.target as HTMLInputElement | HTMLTextAreaElement).value;
@@ -21,8 +25,20 @@
     formData = { ...formData, [id]: { value, error: !regexp.test(value) } };
   };
 
-  const sendForm = () => {
-    firstTime = false;
+  const sendForm = async () => {
+    firstTime = firstTime ? false : firstTime;
+    if (checkErrors()) {
+      showSpinner = true;
+      const sendFeedback = await sendContactData({
+        fname: formData.fname.value,
+        email: formData.email.value,
+        message: formData.message.value
+      });
+      if (sendFeedback) {
+        showSpinner = false;
+        showSuccessMessage = true;
+      }
+    }
   };
 </script>
 
@@ -40,36 +56,14 @@
             <p class="leading-relaxed mt-1 mb-4 text-blueGray-500">
               Complete this form and we will get back to you in 24 hours.
             </p>
-            {#each formSection as { id, i18nref, type, isTextArea }, index}
-              <div class:mt-8={index === 0} class="relative w-full mb-3 ">
-                <label
-                  class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                  for={id}
-                >
-                  {$_(i18nref)}
-                  {#if formData[id]?.error && !firstTime}
-                    <span>Error message</span>
-                  {/if}
-                </label>
-                {#if !isTextArea}
-                  <input
-                    {id}
-                    {type}
-                    class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                    placeholder={$_(i18nref)}
-                    on:input={(e) => handleInput(e, id)}
-                  />
-                {:else}
-                  <textarea
-                    {id}
-                    rows="4"
-                    cols="80"
-                    class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                    placeholder="Type a message..."
-                    on:input={(e) => handleInput(e, id)}
-                  />
-                {/if}
-              </div>
+            {#each formSection as formElement, index}
+              {@const id = `${formElement.id}` }
+              <Input
+                {formElement}
+                marginTop={index === 0}
+                showError={formData[id]?.error && !firstTime}
+                handleInput={(e) => handleInput(e, id)}
+              />
             {/each}
             <div class="text-center mt-6">
               <button

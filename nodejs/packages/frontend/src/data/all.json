@@ -177,18 +177,18 @@
         "id": "fname",
         "i18nref": "organisms.formSection.fields.fname",
         "type": "name",
-        "isTextArea": false
+        "tag": "input"
       },
       {
         "id": "email",
         "i18nref": "organisms.formSection.fields.email",
         "type": "email",
-        "isTextArea": false
+        "tag": "input"
       },
       {
         "id": "message",
         "i18nref": "organisms.formSection.fields.message",
-        "isTextArea": true
+        "tag": "textarea"
       }
     ]
   }

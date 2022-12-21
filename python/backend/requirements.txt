@@ -1,2 +1,3 @@
 Flask==2.2.2
+Flask-Cors==3.0.10
 connexion[swagger-ui]==2.14.1
