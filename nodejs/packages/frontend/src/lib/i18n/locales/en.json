@@ -27,7 +27,10 @@
 				"fname": "Full Name",
 				"email": "E-mail",
 				"message": "Message"
-			}
+			},
+			"contact": "Do you want to contact us?",
+			"contactDescription": "Submit this form and we will contact you as soon as possible.",
+			"sendMessage": "Send Message"
 		},
 		"footer": {
 			"copyright": "© Copyright {date} Sanjul."
@@ -37,6 +40,10 @@
 		"header": {
 			"title": "High Quality Computer Engineering",
 			"description": "Development of applications and solutions with high quality and performance standards"
+		},
+		"spinner": {
+			"responseOK": "Your request has been sent successfully. We will contact you to provide more information.",
+			"responseKO": "Seems that something went wrong, please try again later."
 		}
 	},
 	"molecules": {

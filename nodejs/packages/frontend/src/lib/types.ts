@@ -1,4 +1,4 @@
-import type { DividerPosition } from './enums';
+import type { DividerPosition, EmailFlowStatus } from './enums';
 
 interface I18nrefProps {
   title: string;
@@ -110,3 +110,5 @@ export type DividerColorTypes =
   | 'text-blueGray-200'
   | 'text-white'
   | 'text-blueGray-800';
+
+export type EmailFlowStatusTypes = keyof typeof EmailFlowStatus;

@@ -39,11 +39,6 @@
             {/each}
           </div>
         {/each}
-        {#if !technologiesCard}
-          <span
-            class="text-docker bg-docker text-python bg-python text-node-js bg-node-js text-linux bg-linux text-react bg-react text-js bg-js"
-          />
-        {/if}
       </div>
     </div>
 

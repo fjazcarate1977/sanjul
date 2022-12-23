@@ -2,6 +2,7 @@ from operator import attrgetter
 import subprocess
 import argparse
 
+
 dpd = "docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d"
 dd = "docker compose up -d"
 dp = "Running up Docker..."
@@ -10,6 +11,10 @@ ds = "Docker running succesfully :)"
 pkg = "npm i && cd nodejs && npm i && npm run lerna-up"
 pkgp = "Installing packages for development enviroment..."
 pkgs = "Packages succesfully installed :)"
+
+pipPkgp = "Installing python packages for development enviroment..."
+pipPkgs = "Python packages succesfully installed :)"
+pipPkg = "cd python/backend && pip install -r requirements.txt"
 
 
 parser = argparse.ArgumentParser()
@@ -42,8 +47,8 @@ class runSubProcess:
     def runProcess(self):
         print(self.initMsg)
         prcs = subprocess.run(
-                self.process, shell=True, capture_output=self.verbose, text=True
-            )
+            self.process, shell=True, capture_output=self.verbose, text=True
+        )
         if prcs.returncode <= 1:
             print(self.successMsg)
         else:
@@ -59,5 +64,7 @@ if env == 'prod':
 else:
     initPkg = runSubProcess(pkgp, pkgs, pkg, verbose)
     initPkg.runProcess()
+    initPipPkg = runSubProcess(pipPkgp, pipPkgs, pipPkg, verbose)
+    initPipPkg.runProcess()
     initDevPrcs = runSubProcess(dp, ds, dd, verbose)
     initDevPrcs.runProcess()

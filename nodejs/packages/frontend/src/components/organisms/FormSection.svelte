@@ -1,17 +1,24 @@
 <script lang="ts">
+  import { _ } from 'svelte-i18n';
+
   import { sendContactData } from '$lib/helpers';
   import * as regex from '$lib/regex';
-  import type { FormSectionProps, FormObjectProps } from '$lib/types';
+  import type {
+    FormSectionProps,
+    FormObjectProps,
+    EmailFlowStatusTypes
+  } from '$lib/types';
 
   import Divider from '@atoms/Divider.svelte';
   import Input from '@atoms/Input.svelte';
+  import Spinner from '@atoms/Spinner.svelte';
 
   export let formSection: FormSectionProps[];
 
   let formData: FormObjectProps = {};
   let firstTime = true;
   let showSpinner = false;
-  let showSuccessMessage = false;
+  let flowStatus: EmailFlowStatusTypes;
 
   const checkErrors = () => !Object.values(formData).find((data) => data.error);
 
@@ -34,10 +41,7 @@
         email: formData.email.value,
         message: formData.message.value
       });
-      if (sendFeedback) {
-        showSpinner = false;
-        showSuccessMessage = true;
-      }
+      flowStatus = sendFeedback ? 'ResponseOK' : 'ResponseKO';
     }
   };
 </script>
@@ -52,9 +56,11 @@
           class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200"
         >
           <div class="flex-auto p-5 lg:p-10">
-            <h4 class="text-2xl font-semibold">Want to work with us?</h4>
+            <h4 class="text-2xl font-semibold">
+              {$_('organisms.formSection.contact')}
+            </h4>
             <p class="leading-relaxed mt-1 mb-4 text-blueGray-500">
-              Complete this form and we will get back to you in 24 hours.
+              {$_('organisms.formSection.contactDescription')}
             </p>
             {#each formSection as formElement, index}
               {@const id = `${formElement.id}`}
@@ -73,10 +79,13 @@
                 disabled={!allFilled}
                 on:click={() => sendForm()}
               >
-                Send Message
+                {$_('organisms.formSection.sendMessage')}
               </button>
             </div>
           </div>
+          {#if showSpinner}
+            <Spinner {flowStatus} />
+          {/if}
         </div>
       </div>
     </div>
