@@ -39,20 +39,20 @@
       ? 'block'
       : 'hidden'}"
   >
-    {#each dropdownList as list, index}
-      {#if list.i18nref}
+    {#each dropdownList as { i18nref, links }, index}
+      {#if i18nref}
         <span
           class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-blueGray-400"
         >
-          {$_(list.i18nref)}
+          {$_(i18nref)}
         </span>
       {/if}
-      {#each list.links as el}
+      {#each links as { link, i18nref }}
         <a
-          href={el.link}
+          href={link}
           class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
         >
-          {$_(el.i18nref)}
+          {$_(i18nref)}
         </a>
       {/each}
       {#if index < dropdownList.length - 1}

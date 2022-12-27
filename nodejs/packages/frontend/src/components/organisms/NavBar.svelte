@@ -2,7 +2,6 @@
   import { locale, _ } from 'svelte-i18n';
 
   import { getNewLocale } from '$lib/helpers';
-  import { storeLocale } from '$lib/stores';
   import type { DropdownProps, SocialMediaProps } from '$lib/types';
 
   import Dropdown from '@molecules/Dropdown.svelte';
@@ -18,20 +17,13 @@
 
   let currentLocale;
 
-  storeLocale.subscribe((value) => {
+  locale.subscribe((value) => {
     currentLocale = value;
   });
 
-  const updateLocale = async (newLocale: string) => {
+  const updateLocale = async () => {
+    const newLocale = getNewLocale(currentLocale);
     await locale.set(newLocale);
-  };
-
-  const changeLocale = () => {
-    storeLocale.update((locale: string) => {
-      const newLocale = getNewLocale(locale);
-      updateLocale(newLocale) as unknown;
-      return newLocale;
-    });
   };
 
   $: otherLocale = getNewLocale(currentLocale);
@@ -90,7 +82,7 @@
           <button
             class="bg-white text-blueGray-700 active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
             type="button"
-            on:click={changeLocale}
+            on:click={updateLocale}
           >
             <i class="fas fa-language" />
             {$_(`organisms.navBar.locale.${otherLocale}`)}

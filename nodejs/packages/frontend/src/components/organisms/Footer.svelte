@@ -42,14 +42,14 @@
               {$_('commons.navigation')}
             </span>
             <ul class="list-unstyled">
-              {#each dropdownList as list}
-                {#each list.links as el}
+              {#each dropdownList as { links }}
+                {#each links as { link, i18nref }}
                   <li>
                     <a
                       class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href={el.link}
+                      href={link}
                     >
-                      {$_(el.i18nref)}
+                      {$_(i18nref)}
                     </a>
                   </li>
                 {/each}

@@ -34,7 +34,4 @@
       </div>
     </div>
   {/each}
-  {#if !ideasCardList}
-    <span class="bg-cyan-500 bg-rose-500 bg-teal-500" />
-  {/if}
 </div>

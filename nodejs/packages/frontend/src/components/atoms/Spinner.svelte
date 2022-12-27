@@ -19,7 +19,7 @@
           {$_('atoms.spinner.responseOK')}
         </p>
       {:else if flowStatus === 'ResponseKO'}
-        <i class="fa-solid fa-face-sad-tear fa-bounce text-8xl" />
+        <i class="fa-solid fa-face-sad-tear text-8xl" />
         <p>
           {$_('atoms.spinner.responseKO')}
         </p>

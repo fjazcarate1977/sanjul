@@ -1,12 +1,14 @@
 <script lang="ts">
-  import { _ } from 'svelte-i18n';
+  import { locale, _ } from 'svelte-i18n';
 
   import { sendContactData } from '$lib/helpers';
   import * as regex from '$lib/regex';
   import type {
     FormSectionProps,
     FormObjectProps,
-    EmailFlowStatusTypes
+    EmailFlowStatusTypes,
+    LocalesTypes,
+    SendContactDataProps
   } from '$lib/types';
 
   import Divider from '@atoms/Divider.svelte';
@@ -19,6 +21,12 @@
   let firstTime = true;
   let showSpinner = false;
   let flowStatus: EmailFlowStatusTypes;
+
+  let currentLocale;
+
+  locale.subscribe((value) => {
+    currentLocale = value;
+  });
 
   const checkErrors = () => !Object.values(formData).find((data) => data.error);
 
@@ -36,10 +44,11 @@
     firstTime = firstTime ? false : firstTime;
     if (checkErrors()) {
       showSpinner = true;
-      const sendFeedback = await sendContactData({
+      const sendFeedback = await sendContactData<SendContactDataProps>({
         fname: formData.fname.value,
         email: formData.email.value,
-        message: formData.message.value
+        message: formData.message.value,
+        locale: currentLocale as LocalesTypes
       });
       flowStatus = sendFeedback ? 'ResponseOK' : 'ResponseKO';
     }

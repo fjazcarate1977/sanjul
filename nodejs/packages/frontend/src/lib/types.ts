@@ -1,4 +1,4 @@
-import type { DividerPosition, EmailFlowStatus } from './enums';
+import type { DividerPosition, EmailFlowStatus, Locales } from '$lib/enums';
 
 interface I18nrefProps {
   title: string;
@@ -103,6 +103,13 @@ interface FormObjectNestedProps {
 
 export interface FormObjectProps {
   [key: string]: FormObjectNestedProps;
+}
+
+export type LocalesTypes = keyof typeof Locales;
+
+export interface SendContactDataProps {
+  [key: string]: string;
+  locale: LocalesTypes;
 }
 
 export type DividerPositionTypes = keyof typeof DividerPosition;
