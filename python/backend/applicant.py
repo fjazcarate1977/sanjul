@@ -1,43 +1,33 @@
 from flask import abort
-import re
 
 from mailserver import activate_server
 
 
 class FormField:
 
-    def __init__(self, name, value, regex):
+    def __init__(self, name, value):
         self.name = name
         self.value = value
-        self.regex = regex
-
-
-fnameRegex = re.compile(r"^(\s|\w){4,30}$")
-emailRegex = re.compile(r"^[^@]+[@][a-zA-Z]+\.[a-zA-Z]+")
-messageRegex = re.compile(r"^.{3,50}$")
 
 
 def send_email(applicant):
     inputFields = [
-        FormField("fname", applicant.get("fname"), fnameRegex),
-        FormField("email", applicant.get("email"), emailRegex),
-        FormField("message", applicant.get("message"), messageRegex)
+        FormField("fname", applicant.get("fname")),
+        FormField("email", applicant.get("email")),
+        FormField("message", applicant.get("message")),
+        FormField("locale", applicant.get("locale"))
     ]
 
-    errors = []
     fieldsDict = {}
 
     for field in inputFields:
-        if not re.fullmatch(field.regex, field.value):
-            errors.append(field.name)
-        else:
-            fieldsDict[field.name] = field.value
+        fieldsDict[field.name] = field.value
 
-    if not len(errors) > 0:
-        activate_server(fieldsDict["email"])
+    try:
+        activate_server(fieldsDict)
         return fieldsDict, 201
-    else:
+    except ValueError:
         abort(
             406,
-            errors,
+            "Something went wrong sending the email",
         )

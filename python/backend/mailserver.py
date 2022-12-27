@@ -1,5 +1,9 @@
 import smtplib
 import os
+import json
+from email.message import EmailMessage
+from string import Template
+from email.utils import make_msgid
 
 
 senderAdd = os.environ['EMAIL_ADDRESS']
@@ -7,22 +11,44 @@ password = os.environ['EMAIL_PASSWORD']
 server = os.environ['EMAIL_SERVER']
 port = os.environ['EMAIL_PORT']
 
-msg_to_be_sent = '''
-          Hello, receiver!
-          Hope you are doing well.
-          Welcome to PythonGeeks!
-          '''
 
-
-def activate_server(receiverAdd):
+def activate_server(fieldsDict):
     if server and port and senderAdd and password:
-        smtp_server = smtplib.SMTP(server, int(port))
-        smtp_server.ehlo()
 
+        name = fieldsDict["fname"]
+        locale = fieldsDict["locale"]
+
+        localeDataJson = open(f'./locale/{locale}.json')
+        localeData = json.load(localeDataJson)
+
+        with open(f'./templates/email-{locale}.html',
+                  'r', encoding='utf-8') as f:
+            html_string = Template(f.read())
+
+        asparagus_cid = make_msgid()
+        f.close()
+
+        result = html_string.substitute(
+            name=name, asparagus_cid=asparagus_cid[1:-1])
+
+        msg = EmailMessage()
+
+        msg.set_content(localeData["content"])
+        msg.add_alternative(
+            result, subtype="html")
+
+        with open("./templates/lopan.jpg", 'rb') as img:
+            msg.get_payload()[1].add_related(img.read(), 'image', 'jpeg',
+                                             cid=asparagus_cid)
+
+        msg['Subject'] = localeData["subject"]
+        msg['From'] = senderAdd
+        msg['To'] = fieldsDict["email"]
+
+        smtp_server = smtplib.SMTP(server, int(port))
         smtp_server.starttls()
-        smtp_server.ehlo()
 
         smtp_server.login(senderAdd, password)
-        smtp_server.sendmail(senderAdd, receiverAdd, msg_to_be_sent)
+        smtp_server.send_message(msg)
 
         smtp_server.quit()

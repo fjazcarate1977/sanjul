@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: 'RP Flask REST API'
-  description: 'An API about people and notes'
+  description: 'A small API to send contact email'
   version: '1.0.0'
 
 servers:
@@ -15,13 +15,20 @@ components:
         - fname
         - email
         - message
+        - locale
       properties:
         fname:
           type: 'string'
+          pattern: '^(\s|\w){4,30}$'
         email:
           type: 'string'
+          pattern: '^[^@]+[@][a-zA-Z]+\.[a-zA-Z]+'
         message:
           type: 'string'
+          pattern: '^.{3,50}$'
+        locale:
+          type: 'string'
+          pattern: '^(es-ES)|(en-US)$'
 
 paths:
   /applicant:
