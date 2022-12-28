@@ -17,6 +17,7 @@ def activate_server(fieldsDict):
 
         name = fieldsDict["fname"]
         locale = fieldsDict["locale"]
+        message = fieldsDict["message"]
 
         localeDataJson = open(f'./locale/{locale}.json')
         localeData = json.load(localeDataJson)
@@ -29,7 +30,7 @@ def activate_server(fieldsDict):
         f.close()
 
         result = html_string.substitute(
-            name=name, asparagus_cid=asparagus_cid[1:-1])
+            name=name, message=message, asparagus_cid=asparagus_cid[1:-1])
 
         msg = EmailMessage()
 
@@ -37,13 +38,14 @@ def activate_server(fieldsDict):
         msg.add_alternative(
             result, subtype="html")
 
-        with open("./templates/lopan.jpg", 'rb') as img:
+        with open("./templates/logo.jpg", 'rb') as img:
             msg.get_payload()[1].add_related(img.read(), 'image', 'jpeg',
                                              cid=asparagus_cid)
 
         msg['Subject'] = localeData["subject"]
         msg['From'] = senderAdd
         msg['To'] = fieldsDict["email"]
+        msg['CC'] = senderAdd
 
         smtp_server = smtplib.SMTP(server, int(port))
         smtp_server.starttls()
