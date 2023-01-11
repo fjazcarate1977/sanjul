@@ -34,6 +34,6 @@
 
 {#if false}
   <span
-    class="bg-lightBlue-600 text-lightBlue-600 bg-pink-400 text-pink-400 bg-cyan-500 bg-rose-500 bg-teal-500 bg-docker text-docker bg-python text-python bg-node-js text-node-js bg-linux text-linux bg-react text-react bg-js text-js"
+    class="bg-lightBlue-600 text-lightBlue-600 bg-pink-400 text-pink-400 bg-cyan-500 bg-rose-500 bg-teal-500 bg-docker text-docker bg-python text-python bg-node-js text-node-js bg-linux text-linux bg-react text-react bg-js text-js min-h-screen-75 min-h-screen-50"
   />
 {/if}

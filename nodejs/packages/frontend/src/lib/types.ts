@@ -84,16 +84,27 @@ export interface FormSectionProps {
   tag: string;
 }
 
-interface PageProps {
+export interface HeaderProps {
   mainBackground: string;
+  additionalInfo: boolean;
+  height?: number;
+}
+
+interface PageProps {
+  header: HeaderProps;
   mainSection: MainSectionProps;
   centerSection: CenterSectionProps;
   formSection: FormSectionProps[];
 }
 
+interface PhilosophyProps {
+  header: HeaderProps;
+}
+
 export interface DataProps {
   layout: LayoutProps;
   page: PageProps;
+  philosophy: PhilosophyProps;
 }
 
 interface FormObjectNestedProps {

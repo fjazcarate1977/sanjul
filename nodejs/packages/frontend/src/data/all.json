@@ -46,7 +46,10 @@
     ]
   },
   "page": {
-    "mainBackground": "/img/main-background.avif",
+    "header": {
+      "mainBackground": "/img/main-background.avif",
+      "additionalInfo": true
+    },
     "mainSection": {
       "ideasCardList": [
         {
@@ -191,5 +194,12 @@
         "tag": "textarea"
       }
     ]
+  },
+  "philosophy": {
+    "header": {
+      "mainBackground": "/img/main-background.avif",
+      "additionalInfo": false,
+      "height": 50
+    }
   }
 }

@@ -20,7 +20,8 @@ module.exports = {
         js: '#f7df1e'
       },
       minHeight: {
-        'screen-75': '75vh'
+        'screen-75': '75vh',
+        'screen-50': '50vh'
       },
       fontSize: {
         55: '55rem'
