@@ -197,9 +197,8 @@
   },
   "philosophy": {
     "header": {
-      "mainBackground": "/img/main-background.avif",
-      "additionalInfo": false,
-      "height": 50
+      "mainBackground": "/img/philosophy-background.avif",
+      "additionalInfo": false
     }
   }
 }
