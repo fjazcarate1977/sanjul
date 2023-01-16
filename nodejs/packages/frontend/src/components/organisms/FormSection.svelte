@@ -16,6 +16,9 @@
   import Spinner from '@atoms/Spinner.svelte';
 
   export let formSection: FormSectionProps[];
+  export let backgrpund = false;
+
+  const backgrpundImage = backgrpund ? '/img/contact-background.avif' : '';
 
   let formData: FormObjectProps = {};
   let firstTime = true;
@@ -55,7 +58,10 @@
   };
 </script>
 
-<section class="relative block py-24 bg-blueGray-800">
+<section
+  class="relative block py-24 bg-blueGray-800 bg-no-repeat bg-cover"
+  style="background-image: url({backgrpundImage})"
+>
   <Divider position={'Top'} color="text-blueGray-800" />
 
   <div class="container mx-auto px-4 pb-20 mt-20">

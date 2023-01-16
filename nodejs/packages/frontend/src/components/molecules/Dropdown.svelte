@@ -10,6 +10,7 @@
   let popoverDropdownRef: HTMLElement;
 
   export let dropdownList: DropdownProps[];
+  export let hideNavBar: () => void;
 
   const toggleDropdown = (event: MouseEvent) => {
     event.preventDefault();
@@ -21,6 +22,11 @@
         placement: 'bottom-start'
       });
     }
+  };
+
+  const hideDropdown = () => {
+    dropdownPopoverShow = false;
+    hideNavBar();
   };
 </script>
 
@@ -51,6 +57,7 @@
         <a
           href={link}
           class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+          on:click={hideDropdown}
         >
           {$_(i18nref)}
         </a>

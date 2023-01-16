@@ -7,10 +7,6 @@
           {
             "link": "",
             "i18nref": "commons.dropdownList.brotherhood.links.fran"
-          },
-          {
-            "link": "",
-            "i18nref": "commons.dropdownList.brotherhood.links.leon"
           }
         ]
       },
@@ -21,7 +17,7 @@
             "i18nref": "commons.dropdownList.others.philosophy"
           },
           {
-            "link": "",
+            "link": "/contact",
             "i18nref": "commons.dropdownList.others.contact"
           }
         ]
@@ -141,18 +137,6 @@
       "brotherhoodCard": [
         {
           "img": "img/fran.avif",
-          "name": "León Azcárate",
-          "position": "Founder and CEO",
-          "socialMedia": [
-            {
-              "link": "https://www.youtube.com/watch?v=UjQN7Hq0YoQ&list=RDMM&index=31",
-              "title": "linkedin",
-              "color": "lightBlue-600"
-            }
-          ]
-        },
-        {
-          "img": "img/fran.avif",
           "name": "Francisco Azcárate",
           "position": "Founder and CEO",
           "socialMedia": [
@@ -198,7 +182,8 @@
   "philosophy": {
     "header": {
       "mainBackground": "/img/philosophy-background.avif",
-      "additionalInfo": false
+      "additionalInfo": false,
+      "height": 50
     }
   }
 }

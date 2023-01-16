@@ -11,8 +11,8 @@
   export let dropdownList: DropdownProps[];
   export let navBarList: SocialMediaProps[];
 
-  function setNavBarOpen() {
-    navBarOpen = !navBarOpen;
+  function setNavBarOpen(inside?: boolean) {
+    navBarOpen = inside ? false : !navBarOpen;
   }
 
   let currentLocale;
@@ -47,7 +47,7 @@
       <button
         class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
         type="button"
-        on:click={setNavBarOpen}
+        on:click={() => setNavBarOpen()}
       >
         <i class="text-white fas fa-bars" />
       </button>
@@ -60,7 +60,7 @@
     >
       <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
         <li class="flex items-center">
-          <Dropdown {dropdownList} />
+          <Dropdown {dropdownList} hideNavBar={() => setNavBarOpen(true)} />
         </li>
         {#each navBarList as { link, title }}
           <li class="flex items-center">
