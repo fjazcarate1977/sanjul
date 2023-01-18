@@ -33,7 +33,9 @@
         >
           {`+${years}`}
         </span>
-        <span class="text-sm text-blueGray-400">{$_('commons.brotherhood.years')}</span>
+        <span class="text-sm text-blueGray-400"
+          >{$_('commons.brotherhood.years')}</span
+        >
       </div>
     </div>
   </div>

@@ -12,6 +12,6 @@
 
 <div>
   <main>
-    <FormSection {formSection} backgrpund />
+    <FormSection {formSection} background />
   </main>
 </div>

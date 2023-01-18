@@ -85,6 +85,7 @@
 		}
 	},
 	"pages": {
-		"philosophy": "Nuestra filosofía"
+		"philosophy": "Nuestra filosofía",
+		"error": "¡Disculpe, parece que ha fallado algo!"
 	}
 }

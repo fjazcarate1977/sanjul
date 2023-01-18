@@ -164,7 +164,7 @@
   },
   "profile": {
     "header": {
-      "mainBackground": "/img/philosophy-background.avif",
+      "mainBackground": "/img/profile-background.avif",
       "additionalInfo": false,
       "height": 50
     }
