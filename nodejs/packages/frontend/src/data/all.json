@@ -5,7 +5,7 @@
         "i18nref": "commons.dropdownList.brotherhood.title",
         "links": [
           {
-            "link": "",
+            "link": "/profiles/francisco",
             "i18nref": "commons.dropdownList.brotherhood.links.fran"
           }
         ]
@@ -133,30 +133,6 @@
             }
           ]
         }
-      ],
-      "brotherhoodCard": [
-        {
-          "img": "img/fran.avif",
-          "name": "Francisco Azcárate",
-          "position": "Founder and CEO",
-          "socialMedia": [
-            {
-              "link": "",
-              "title": "linkedin",
-              "color": "lightBlue-600"
-            },
-            {
-              "link": "",
-              "title": "twitter",
-              "color": "pink-400"
-            },
-            {
-              "link": "",
-              "title": "github",
-              "color": "blueGray-800"
-            }
-          ]
-        }
       ]
     },
     "formSection": [
@@ -185,5 +161,40 @@
       "additionalInfo": false,
       "height": 50
     }
+  },
+  "profile": {
+    "header": {
+      "mainBackground": "/img/philosophy-background.avif",
+      "additionalInfo": false,
+      "height": 50
+    }
+  },
+  "shared": {
+    "brotherhoodCard": [
+      {
+        "img": "/img/fran.avif",
+        "name": "Francisco Azcárate",
+        "i18nref": "commons.brotherhood.francisco",
+        "years": 15,
+        "slug": "francisco",
+        "socialMedia": [
+          {
+            "link": "",
+            "title": "linkedin",
+            "color": "lightBlue-600"
+          },
+          {
+            "link": "",
+            "title": "twitter",
+            "color": "pink-400"
+          },
+          {
+            "link": "",
+            "title": "github",
+            "color": "blueGray-800"
+          }
+        ]
+      }
+    ]
   }
 }

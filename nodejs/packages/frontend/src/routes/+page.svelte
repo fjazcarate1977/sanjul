@@ -9,15 +9,18 @@
   import data from '@data/all.json';
 
   const {
-    page: { header, mainSection, centerSection, formSection }
+    page: { header, mainSection, centerSection, formSection },
+    shared: { brotherhoodCard }
   } = data as DataProps;
+
+  const centerPlusShared = { ...centerSection, brotherhoodCard };
 </script>
 
 <div>
   <main>
     <Header {header} />
     <MainSection {mainSection} />
-    <CenterSection {centerSection} />
+    <CenterSection centerSection={centerPlusShared} />
     <FormSection {formSection} />
   </main>
 </div>

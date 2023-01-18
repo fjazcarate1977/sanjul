@@ -66,13 +66,14 @@ export interface TechnologiesCardProps {
 export interface BrotherhoodCardProps {
   img: string;
   name: string;
-  position: string;
+  i18nref: string;
   socialMedia: SocialMediaProps[];
+  slug: string;
+  years: number;
 }
 
-export interface CenterSectionProps {
+export interface CenterSectionProps extends SharedProps {
   technologiesCard: TechnologiesCardProps[];
-  brotherhoodCard: BrotherhoodCardProps[];
 }
 
 type InputTypes = 'name' | 'email';
@@ -101,10 +102,20 @@ interface PhilosophyProps {
   header: HeaderProps;
 }
 
+interface ProfileProps {
+  header: HeaderProps;
+}
+
+interface SharedProps {
+  brotherhoodCard: BrotherhoodCardProps[];
+}
+
 export interface DataProps {
   layout: LayoutProps;
   page: PageProps;
   philosophy: PhilosophyProps;
+  profile: ProfileProps;
+  shared: SharedProps;
 }
 
 interface FormObjectNestedProps {

@@ -13,7 +13,14 @@
 				"contact": "Contact Us"
 			}
 		},
-		"navigation": "Navigation"
+		"navigation": "Navigation",
+		"brotherhood": {
+			"francisco": {
+				"position": "Founder and CEO",
+				"location": "Madrid, Spain"
+			},
+			"years": "Years of experience"
+		}
 	},
 	"organisms": {
 		"navBar": {
