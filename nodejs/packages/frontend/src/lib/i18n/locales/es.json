@@ -20,7 +20,8 @@
 				"location": "Madrid, España"
 			},
 			"years": "Años de experiencia"
-		}
+		},
+		"name": "Sanjul"
 	},
 	"organisms": {
 		"navBar": {
@@ -40,7 +41,11 @@
 			"sendMessage": "Enviar mensaje"
 		},
 		"footer": {
-			"copyright": "© Derechos de autor {date} Sanjul."
+			"copyright": "© Derechos de autor {date} Sanjul.",
+			"follow": {
+				"title": "¡Siguenós en las redes!",
+				"description": "Usa nuestras redes sociales para mantenerte informado y contactarnos."
+			}
 		}
 	},
 	"atoms": {

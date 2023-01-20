@@ -2,7 +2,13 @@
   import { _ } from 'svelte-i18n';
 
   import { page } from '$app/stores';
+
+  const errorMessage = `${$page.status}: ${$page.error.message}`;
 </script>
+
+<svelte:head>
+  <title>{$_('commons.name')} - {errorMessage}</title>
+</svelte:head>
 
 <div>
   <main>
@@ -20,7 +26,7 @@
           {$_('pages.error')}
         </h3>
 
-        <h4 class="text-2xl mt-4">{$page.status}: {$page.error.message}</h4>
+        <h4 class="text-2xl mt-4">{errorMessage}</h4>
       </section>
     </div>
   </main>

@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { _ } from 'svelte-i18n';
+
   import type { DataProps } from '$lib/types';
 
   import FormSection from '@organisms/FormSection.svelte';
@@ -9,6 +11,12 @@
     page: { formSection }
   } = data as DataProps;
 </script>
+
+<svelte:head>
+  <title
+    >{$_('commons.name')} - {$_('commons.dropdownList.others.contact')}</title
+  >
+</svelte:head>
 
 <div>
   <main>

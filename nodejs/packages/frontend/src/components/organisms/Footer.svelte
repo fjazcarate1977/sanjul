@@ -17,9 +17,11 @@
   <div class="container mx-auto px-4">
     <div class="flex flex-wrap text-center lg:text-left">
       <div class="w-full lg:w-6/12 px-4">
-        <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+        <h4 class="text-3xl font-semibold">
+          {$_('organisms.footer.follow.title')}
+        </h4>
         <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
-          Find us on any of these platforms, we respond 1-2 business days.
+          {$_('organisms.footer.follow.description')}
         </h5>
         <div class="mt-6 lg:mb-0 mb-6">
           {#each navBarList as { color, link, title }}

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { locale } from 'svelte-i18n';
+  import { locale, _ } from 'svelte-i18n';
   import SvelteMarkdown from 'svelte-markdown';
 
   import type { DataProps, BrotherhoodCardProps } from '$lib/types';
@@ -29,7 +29,13 @@
   });
 
   $: source = profileMarkdown[currentLocale.replace('-', '')] as string;
+
+  const { name } = profileInfo;
 </script>
+
+<svelte:head>
+  <title>{$_('commons.name')} - {name}</title>
+</svelte:head>
 
 <div>
   <main>

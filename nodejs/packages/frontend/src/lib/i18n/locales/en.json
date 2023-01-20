@@ -20,7 +20,8 @@
 				"location": "Madrid, Spain"
 			},
 			"years": "Years of experience"
-		}
+		},
+		"name": "Sanjul"
 	},
 	"organisms": {
 		"navBar": {
@@ -40,7 +41,11 @@
 			"sendMessage": "Send Message"
 		},
 		"footer": {
-			"copyright": "© Copyright {date} Sanjul."
+			"copyright": "© Copyright {date} Sanjul.",
+			"follow": {
+				"title": "Follow us on social networks!",
+				"description": "Use our social networks to stay updated and get in touch with us."
+			}
 		}
 	},
 	"atoms": {

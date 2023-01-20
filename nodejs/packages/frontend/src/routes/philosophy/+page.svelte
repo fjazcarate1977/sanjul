@@ -22,6 +22,10 @@
   $: source = sources[currentLocale.replace('-', '')] as string;
 </script>
 
+<svelte:head>
+  <title>{$_('commons.name')} - {$_('pages.philosophy')}</title>
+</svelte:head>
+
 <div>
   <main>
     <Header {header} />

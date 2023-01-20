@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { _ } from 'svelte-i18n';
+
   import type { DataProps } from '$lib/types';
 
   import Header from '@atoms/Header.svelte';
@@ -15,6 +17,10 @@
 
   const centerPlusShared = { ...centerSection, brotherhoodCard };
 </script>
+
+<svelte:head>
+  <title>{$_('commons.name')} - {$_('atoms.header.title')}</title>
+</svelte:head>
 
 <div>
   <main>
