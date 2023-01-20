@@ -50,7 +50,7 @@
     <i class="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400" />
     {$_(`${i18nref}.location`)}
   </div>
-  <div class="mb-2 text-blueGray-600 mt-10">
+  <div class="mb-2 text-blueGray-600 mt-2">
     <i class="fas fa-briefcase mr-2 text-lg text-blueGray-400" />
     {$_(`${i18nref}.position`)}
   </div>

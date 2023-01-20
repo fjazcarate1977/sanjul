@@ -1,23 +1,21 @@
 export default `
 
-Our philosophy is **quality**, and to achieve it our mentality is ***"craftsmanship"***. 
-We like to treat each project meticulously, without delaying it.<br><br>
+Thanks to a **Spectrum ZK 48K**, I started my journey in this world. My first line of code was ***load ""***, 
+which was necessary to start loading the game on a cassette, for the joy and delight of my neighbors.<br><br>
 
-To fulfill this methodolgy, we focus on having a **solid architectural foundation**. 
-Studying the client's needs in depth, searching for optimal solutions or carrying out proofs of concept, are a fundamental part of this approach.<br><br>
+After the initial euphoria, I started to **program small things** in it, like a flag, although I mostly used it to play games.
+Years went by and that interest disappeared until, in an ***"INEM course"***, I came across **Action Script, Flash, HTML...**<br><br>
 
-This makes that our work and its **quality grow exponentially**.<br><br>
+From that moment on, I started a career path to where I am right now, as disparate as it is fun.<br><br>
 
-![Philosophy Super Nintendo](/img/philosophy-snes.avif)<br><br>
+![Spectrum ZX 48K](/img/spectrum.avif)<br><br>
 
-We like **simplicity**, we grew up playing "Super Mario World", 76 levels, more than 30 characters... only 512 KB! 
-The code of each application must be **understandable**, ***"readable"***, correctly **modulated**, no complex guides should be necessary, it should speak for itself. 
-The same main ideas applies to the necessary infrastructures, another important part never enough considered.<br><br>
+With a markedly **self-taught** profile and a **restless** spirit, I enjoy every project with the challenges that it have.
+Both in terms of technology and management, especially **human resources**.<br><br>
 
-We face each project with **humility and exigency**, without settling for shortcuts or half solutions, always ready to learn every day.<br><br>
+Technologically I am **FullStack**, mainly **JavaScript**, but I adapt quickly to other languages like **Python, PHP...**. 
+Thanks to my brother Leon I have expanded my knowledge about ***"Big Data"***.<br><br>
 
-If you share our way of working, contact us!
-
-![Francisco's sign](/img/sign.avif)<br><br>
+You have at your disposal my **repository** with several examples of how I work including the code of this page.
 
 `;
