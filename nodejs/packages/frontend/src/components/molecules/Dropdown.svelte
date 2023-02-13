@@ -4,7 +4,6 @@
 
   import type { DropdownProps } from '$lib/types';
 
-
   let dropdownPopoverShow = false;
 
   export let dropdownList: DropdownProps[];
