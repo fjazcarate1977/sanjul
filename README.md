@@ -27,4 +27,4 @@ You need to have installed:
 
 ## Additional comments
 
-The code must speak itself,so thanks a lot and enjoy! :)
+The code must speak itself, so thanks a lot and enjoy! :)
