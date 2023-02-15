@@ -138,19 +138,28 @@
     "formSection": [
       {
         "id": "fname",
-        "i18nref": "organisms.formSection.fields.fname",
+        "i18nref": {
+          "label": "organisms.formSection.fields.fname.label",
+          "error": "organisms.formSection.fields.fname.error"
+        },
         "type": "name",
         "tag": "input"
       },
       {
         "id": "email",
-        "i18nref": "organisms.formSection.fields.email",
+        "i18nref": {
+          "label": "organisms.formSection.fields.email.label",
+          "error": "organisms.formSection.fields.email.error"
+        },
         "type": "email",
         "tag": "input"
       },
       {
         "id": "message",
-        "i18nref": "organisms.formSection.fields.message",
+        "i18nref": {
+          "label": "organisms.formSection.fields.message.label",
+          "error": "organisms.formSection.fields.message.error"
+        },
         "tag": "textarea"
       }
     ]

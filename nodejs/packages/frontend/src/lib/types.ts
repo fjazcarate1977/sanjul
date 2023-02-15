@@ -78,9 +78,14 @@ export interface CenterSectionProps extends SharedProps {
 
 type InputTypes = 'name' | 'email';
 
+interface I18nrefFormProps {
+  label: string;
+  error: string;
+}
+
 export interface FormSectionProps {
   id: string;
-  i18nref: string;
+  i18nref: I18nrefFormProps;
   type?: InputTypes;
   tag: string;
 }

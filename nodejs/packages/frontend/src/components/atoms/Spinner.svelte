@@ -3,7 +3,7 @@
 
   import type { EmailFlowStatusTypes } from '$lib/types';
 
-  export let flowStatus: EmailFlowStatusTypes;
+  export let flowStatus: EmailFlowStatusTypes = 'Loading';
 </script>
 
 <div
@@ -23,7 +23,7 @@
         <p>
           {$_('atoms.spinner.responseKO')}
         </p>
-      {:else}
+      {:else if flowStatus === "Loading"}
         <i class="fa-solid fa-tower-broadcast fa-beat text-8xl" />
       {/if}
     </div>

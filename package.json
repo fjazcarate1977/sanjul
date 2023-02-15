@@ -20,6 +20,5 @@
     "check-prettier": "prettier --check nodejs/packages/*/**/*.{ts,svelte}",
     "prettier": "prettier --write nodejs/packages/*/**/*.{ts,svelte}",
     "prepare": "husky install"
-  },
-  "type": "module"
+  }
 }

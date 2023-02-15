@@ -32,9 +32,18 @@
 		},
 		"formSection": {
 			"fields": {
-				"fname": "Full Name",
-				"email": "E-mail",
-				"message": "Message"
+				"fname": {
+					"label": "Full Name",
+					"error": "Must have between 4 and 15 characters"
+				},
+				"email": {
+					"label": "E-mail",
+					"error": "Must have the proper email format"
+				},
+				"message": {
+					"label": "Message",
+					"error": "Must have between 3 and 50 characters"
+				}
 			},
 			"contact": "Do you want to contact us?",
 			"contactDescription": "Submit this form and we will contact you as soon as possible.",

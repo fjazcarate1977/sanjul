@@ -19,7 +19,7 @@ components:
       properties:
         fname:
           type: 'string'
-          pattern: '^(\s|\w){4,30}$'
+          pattern: '^(\s|\D){4,30}$'
         email:
           type: 'string'
           pattern: '^[^@]+[@][a-zA-Z]+\.[a-zA-Z]+'

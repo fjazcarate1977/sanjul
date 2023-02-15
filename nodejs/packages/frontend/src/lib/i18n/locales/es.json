@@ -32,9 +32,18 @@
 		},
 		"formSection": {
 			"fields": {
-				"fname": "Nombre",
-				"email": "Correo electrónico",
-				"message": "Mensaje"
+				"fname": {
+					"label": "Nombre",
+					"error": "Debe tener entre 4 y 15 caracteres"
+				},
+				"email": {
+					"label": "Correo electrónico",
+					"error": "Debe tener el formato de correo correcto"
+				},
+				"message": {
+					"label": "Mensaje",
+					"error": "Debe tener entre 3 and 50 caracteres"
+				}
 			},
 			"contact": "¿Desea ponerse en contacto con nosotros?",
 			"contactDescription": "Envíe este formulario y nos pondremos en contacto con usted lo antes posible.",

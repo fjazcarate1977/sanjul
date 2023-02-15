@@ -5,7 +5,8 @@ export enum DividerPosition {
 
 export enum EmailFlowStatus {
   ResponseOK = 'responseOK',
-  ResponseKO = 'responseKO'
+  ResponseKO = 'responseKO',
+  Loading = 'loading'
 }
 
 export enum Locales {
