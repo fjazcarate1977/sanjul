@@ -23,7 +23,7 @@
         <p>
           {$_('atoms.spinner.responseKO')}
         </p>
-      {:else if flowStatus === "Loading"}
+      {:else if flowStatus === 'Loading'}
         <i class="fa-solid fa-tower-broadcast fa-beat text-8xl" />
       {/if}
     </div>

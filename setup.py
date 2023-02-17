@@ -1,7 +1,7 @@
 from operator import attrgetter
 import subprocess
+import shutil
 import argparse
-
 
 dpd = "docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d"
 dd = "docker compose up -d"
@@ -22,7 +22,6 @@ parser.add_argument('-e', '--environment',
                     choices=['dev', 'prod'],
                     required=True,
                     dest="env",
-                    metavar="<Deploy environment>",
                     help="Select the environment to deploy: dev | prod.")
 parser.add_argument('-v', '--verbose',
                     action='store_false',
@@ -35,7 +34,7 @@ class runSubProcess:
 
     initMsg = "Initial Message"
     successMsg = "Success Message"
-    process = "echo 'Azcárate are the best'"
+    process = "echo 'Azcárate's are the best'"
     verbose = True
 
     def __init__(self, initMsg, successMsg, process, verbose):
@@ -59,6 +58,9 @@ class runSubProcess:
 env, verbose = attrgetter('env', 'verbose')(args)
 
 if env == 'prod':
+    file = input("Could you please provide me the keys file path? ")
+    shutil.copyfile(file,
+                    'nodejs/packages/frontend/src/lib/server/secrets.json')
     initPrcs = runSubProcess(dp, ds, dpd, verbose)
     initPrcs.runProcess()
 else:

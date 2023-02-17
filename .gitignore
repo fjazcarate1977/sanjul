@@ -178,3 +178,5 @@ package-lock.json
 # Python cache
 __pycache__/
 
+# Front End API keys
+nodejs/packages/frontend/src/lib/server/secrets.json
