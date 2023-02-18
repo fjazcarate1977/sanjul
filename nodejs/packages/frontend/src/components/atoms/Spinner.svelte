@@ -7,9 +7,8 @@
 </script>
 
 <div
-  class="p-5 lg:p-10 grid min-h-full min-w-full bg-blueGray-200 absolute place-content-center opacity-{flowStatus
-    ? 0
-    : 75}"
+  class:absolute={flowStatus === 'Loading'}
+  class="p-5 lg:p-10 grid min-h-full min-w-full bg-blueGray-200 place-content-center shadow-lg rounded-lg"
 >
   <div class="flex items-center gap-2 text-gray-500">
     <div class="text-blueGray-600 text-center">
