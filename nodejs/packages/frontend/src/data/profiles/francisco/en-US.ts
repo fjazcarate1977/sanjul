@@ -8,7 +8,7 @@ Years went by and that interest disappeared until, in an ***"INEM course"***, I 
 
 From that moment on, I started a career path to where I am right now, as disparate as it is fun.<br><br>
 
-![Spectrum ZX 48K](/img/spectrum.avif)<br><br>
+![Spectrum ZX 48K](/img/spectrum.jpg)<br><br>
 
 With a markedly **self-taught** profile and a **restless** spirit, I enjoy every project with the challenges that it have.
 Both in terms of technology and management, especially **human resources**.<br><br>

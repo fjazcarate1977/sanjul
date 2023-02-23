@@ -13,7 +13,7 @@ services:
       - build_output:/home/node/app/packages/frontend/build
     command: >
       sh -c "
-             node /home/node/app/packages/frontend/build/index.js"
+             ORIGIN=http://localhost:3000 node /home/node/app/packages/frontend/build/index.js"
 
 volumes:
   node_modules:

@@ -8,7 +8,7 @@ Pasaron los años y aquel interés desapareció hasta que en un ***"curso del IN
 
 Desde ese momento emprendí una carrera hacia donde estoy ahora mismo, tan dispar como divertida.<br><br>
 
-![Spectrum ZX 48K](/img/spectrum.avif)<br><br>
+![Spectrum ZX 48K](/img/spectrum.jpg)<br><br>
 
 De perfil marcadamente **autodidacta** y espíritu **inquieto**, disfruto de cada proyecto y los retos que plantea.
 Tanto en términos de tecnología, como a nivel de gestión, especialmente de la **humana**.<br><br>

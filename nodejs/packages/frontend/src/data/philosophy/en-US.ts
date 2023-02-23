@@ -8,7 +8,7 @@ Studying the client's needs in depth, searching for optimal solutions or carryin
 
 This makes that our work and its **quality grow exponentially**.<br><br>
 
-![Philosophy Super Nintendo](/img/philosophy-snes.avif)<br><br>
+![Philosophy Super Nintendo](/img/philosophy-snes.jpg)<br><br>
 
 We like **simplicity**, we grew up playing "Super Mario World", 76 levels, more than 30 characters... only 512 KB! 
 The code of each application must be **understandable**, ***"readable"***, correctly **modulated**, no complex guides should be necessary, it should speak for itself. 
@@ -18,6 +18,6 @@ We face each project with **humility and exigency**, without settling for shortc
 
 If you share our way of working, contact us!
 
-![Francisco's sign](/img/sign.avif)<br><br>
+![Francisco's sign](/img/sign.jpg)<br><br>
 
 `;

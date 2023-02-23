@@ -10,7 +10,7 @@
   export let showSpinner = false;
   export let flowStatus: EmailFlowStatusTypes;
 
-  const backgroundImage = background ? '/img/contact-background.avif' : '';
+  const backgroundImage = background ? '/img/contact-background.png' : '';
 </script>
 
 <section

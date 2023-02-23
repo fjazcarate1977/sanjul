@@ -43,7 +43,7 @@
   },
   "page": {
     "header": {
-      "mainBackground": "/img/main-background.avif",
+      "mainBackground": "/img/main-background.jpg",
       "additionalInfo": true
     },
     "mainSection": {
@@ -74,7 +74,7 @@
         }
       ],
       "introductionCard": {
-        "image": "/img/canvas.avif",
+        "image": "/img/canvas.jpg",
         "keys": [
           {
             "i18nref": "molecules.introductionCard.keys.performance",
@@ -166,14 +166,14 @@
   },
   "philosophy": {
     "header": {
-      "mainBackground": "/img/philosophy-background.avif",
+      "mainBackground": "/img/philosophy-background.jpg",
       "additionalInfo": false,
       "height": 50
     }
   },
   "profile": {
     "header": {
-      "mainBackground": "/img/profile-background.avif",
+      "mainBackground": "/img/profile-background.jpg",
       "additionalInfo": false,
       "height": 50
     }
@@ -181,7 +181,7 @@
   "shared": {
     "brotherhoodCard": [
       {
-        "img": "/img/fran.avif",
+        "img": "/img/fran.jpg",
         "name": "Francisco Azcárate",
         "i18nref": "commons.brotherhood.francisco",
         "years": 15,

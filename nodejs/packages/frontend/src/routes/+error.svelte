@@ -19,7 +19,7 @@
         <img
           alt="Error"
           class="m-auto w-3/4 lg:w-2/3 rounded-lg shadow-xl"
-          src="/img/error.avif"
+          src="/img/error.jpg"
           style="transform: scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg);"
         />
         <h3 class="text-3xl mt-10 font-semibold font-heartwarming">
