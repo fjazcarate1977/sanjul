@@ -1,15 +1,9 @@
 import { fail } from '@sveltejs/kit';
-import { locale, _ } from 'svelte-i18n';
 
 import { sendContactData } from '$lib/server/helpers';
 
 import type { Actions } from './$types';
 
-let currentLocale;
-
-locale.subscribe((value) => {
-  currentLocale = value;
-});
 
 /** @type {import('./$types').Actions} */
 export const actions = {
@@ -20,7 +14,7 @@ export const actions = {
       fname: data.get('fname'),
       email: data.get('email'),
       message: data.get('message'),
-      locale: currentLocale
+      locale: data.get('locale')
     });
 
     if (sendFeedback) {

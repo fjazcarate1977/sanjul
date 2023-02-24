@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { _ } from 'svelte-i18n';
+  import { locale, _ } from 'svelte-i18n';
 
   import { enhance, applyAction } from '$app/forms';
 
@@ -76,6 +76,7 @@
               marginTop={index === 0}
               showError={withErrors.find(({ id }) => id === idForm)}
             />
+            <input type="hidden" name="locale" value={$locale} />
           {/each}
           <div class="text-center mt-6">
             <button
