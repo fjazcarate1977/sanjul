@@ -4,7 +4,6 @@ import { sendContactData } from '$lib/server/helpers';
 
 import type { Actions } from './$types';
 
-
 /** @type {import('./$types').Actions} */
 export const actions = {
   sendInfo: async ({ request }) => {
