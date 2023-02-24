@@ -17,7 +17,6 @@ export interface IdeasCardListProps {
 }
 
 export interface IntroductionCardProps {
-  image: string;
   keys: IntroductionKeysProps[];
 }
 
@@ -64,7 +63,6 @@ export interface TechnologiesCardProps {
 }
 
 export interface BrotherhoodCardProps {
-  img: string;
   name: string;
   i18nref: string;
   socialMedia: SocialMediaProps[];

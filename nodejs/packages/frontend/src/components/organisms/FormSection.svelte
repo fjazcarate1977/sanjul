@@ -1,6 +1,7 @@
 <script lang="ts">
   import { _ } from 'svelte-i18n';
 
+  import contactBackground from '$lib/assets/contact/contact-background.png';
   import type { EmailFlowStatusTypes } from '$lib/types';
 
   import Divider from '@atoms/Divider.svelte';
@@ -10,7 +11,7 @@
   export let showSpinner = false;
   export let flowStatus: EmailFlowStatusTypes;
 
-  const backgroundImage = background ? '/img/contact-background.png' : '';
+  const backgroundImage = background ? contactBackground : '';
 </script>
 
 <section

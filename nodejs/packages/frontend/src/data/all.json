@@ -25,17 +25,17 @@
     ],
     "navBarList": [
       {
-        "link": "https://www.libertaddigital.com/",
+        "link": "https://www.linkedin.com/company/sanjul-proyectos-y-estudios-de-mercado-sl/",
         "title": "linkedin",
         "color": "lightBlue-600"
       },
       {
-        "link": "",
+        "link": "https://twitter.com/sanjulspain",
         "title": "twitter",
         "color": "pink-400"
       },
       {
-        "link": "",
+        "link": "https://github.com/fjazcarate1977",
         "title": "github",
         "color": "blueGray-800"
       }
@@ -43,7 +43,7 @@
   },
   "page": {
     "header": {
-      "mainBackground": "/img/main-background.jpg",
+      "mainBackground": "pageBackground",
       "additionalInfo": true
     },
     "mainSection": {
@@ -74,7 +74,6 @@
         }
       ],
       "introductionCard": {
-        "image": "/img/canvas.jpg",
         "keys": [
           {
             "i18nref": "molecules.introductionCard.keys.performance",
@@ -98,17 +97,17 @@
           "technologies": [
             {
               "technology": "docker",
-              "link": "",
+              "link": "https://www.docker.com/",
               "title": "Docker"
             },
             {
               "technology": "python",
-              "link": "",
+              "link": "https://www.python.org/",
               "title": "Python"
             },
             {
               "technology": "node-js",
-              "link": "",
+              "link": "https://nodejs.org/en/",
               "title": "Node JS"
             }
           ]
@@ -118,17 +117,17 @@
           "technologies": [
             {
               "technology": "linux",
-              "link": "",
+              "link": "https://www.linux.org/",
               "title": "Linux"
             },
             {
               "technology": "react",
-              "link": "",
+              "link": "https://reactjs.org/",
               "title": "React"
             },
             {
               "technology": "js",
-              "link": "",
+              "link": "https://www.javascript.com/",
               "title": "JavaScript"
             }
           ]
@@ -166,14 +165,14 @@
   },
   "philosophy": {
     "header": {
-      "mainBackground": "/img/philosophy-background.jpg",
+      "mainBackground": "philosophyBackground",
       "additionalInfo": false,
       "height": 50
     }
   },
   "profile": {
     "header": {
-      "mainBackground": "/img/profile-background.jpg",
+      "mainBackground": "profileBackground",
       "additionalInfo": false,
       "height": 50
     }
@@ -181,24 +180,23 @@
   "shared": {
     "brotherhoodCard": [
       {
-        "img": "/img/fran.jpg",
         "name": "Francisco Azcárate",
         "i18nref": "commons.brotherhood.francisco",
         "years": 15,
         "slug": "francisco",
         "socialMedia": [
           {
-            "link": "",
+            "link": "https://www.linkedin.com/in/francisco-javier-azcarate-de-castro-sanjul/",
             "title": "linkedin",
             "color": "lightBlue-600"
           },
           {
-            "link": "",
+            "link": "https://twitter.com/sanjulspain",
             "title": "twitter",
             "color": "pink-400"
           },
           {
-            "link": "",
+            "link": "https://github.com/fjazcarate1977",
             "title": "github",
             "color": "blueGray-800"
           }

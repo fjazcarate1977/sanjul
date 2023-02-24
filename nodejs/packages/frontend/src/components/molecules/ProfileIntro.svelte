@@ -6,8 +6,9 @@
   import SocialMedia from '@atoms/SocialMedia.svelte';
 
   export let profileInfo: BrotherhoodCardProps;
+  export let profileImage: unknown;
 
-  const { name, img, socialMedia, i18nref, years } = profileInfo;
+  const { name, socialMedia, i18nref, years } = profileInfo;
 </script>
 
 <div class="flex flex-wrap justify-center">
@@ -15,7 +16,7 @@
     <div class="relative">
       <img
         alt={name}
-        src={img}
+        src={profileImage}
         class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
       />
     </div>

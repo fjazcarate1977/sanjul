@@ -1,6 +1,9 @@
 <script lang="ts">
   import { _ } from 'svelte-i18n';
 
+  import pageBackground from '$lib/assets/header/page-background.jpg';
+  import philosophyBackground from '$lib/assets/header/philosophy-background.jpg';
+  import profileBackground from '$lib/assets/header/profile-background.jpg';
   import type { HeaderProps } from '$lib/types';
 
   import Divider from '@atoms/Divider.svelte';
@@ -8,6 +11,15 @@
   export let header: HeaderProps;
 
   const { mainBackground, additionalInfo, height } = header;
+
+  const getBackground = (background): unknown =>
+    ({
+      pageBackground,
+      philosophyBackground,
+      profileBackground
+    }[background as string] || pageBackground);
+
+  const backgroundSelected = getBackground(mainBackground);
 </script>
 
 <div
@@ -17,7 +29,7 @@
 >
   <div
     class="absolute top-0 w-full h-full bg-center bg-cover"
-    style="background-image: url({mainBackground})"
+    style="background-image: url({backgroundSelected})"
   >
     <span
       id="blackOverlay"

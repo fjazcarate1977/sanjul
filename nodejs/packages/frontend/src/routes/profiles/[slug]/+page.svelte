@@ -15,9 +15,10 @@
 
   let currentLocale: string;
 
-  const { profileMarkdown, profileInfo } = data as {
+  const { profileMarkdown, profileInfo, profileImage } = data as {
     profileInfo: BrotherhoodCardProps;
     profileMarkdown: string;
+    profileImage: unknown;
   };
 
   const {
@@ -46,7 +47,7 @@
           class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64"
         >
           <div class="px-6">
-            <ProfileIntro {profileInfo} />
+            <ProfileIntro {profileInfo} {profileImage} />
             <div class="mt-10 py-10 border-t border-blueGray-200 text-center">
               <div class="flex flex-wrap justify-center">
                 <div class="w-full lg:w-9/12 px-4">

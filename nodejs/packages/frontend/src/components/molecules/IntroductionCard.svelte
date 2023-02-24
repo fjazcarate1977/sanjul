@@ -1,11 +1,12 @@
 <script lang="ts">
   import { _ } from 'svelte-i18n';
 
+  import canvas from '$lib/assets/introduction/canvas.jpg';
   import type { IntroductionCardProps } from '$lib/types';
 
   export let introductionCard: IntroductionCardProps;
 
-  const { image, keys } = introductionCard;
+  const { keys } = introductionCard;
 </script>
 
 <div class="flex flex-wrap items-center mt-32">
@@ -47,13 +48,13 @@
 
   <div class="w-full md:w-6/12 mr-auto px-4 pt-24 md:pt-0">
     <img
-      alt="..."
+      alt={$_('molecules.introductionCard.title')}
       class="max-w-full rounded-lg shadow-xl"
       style="
         transform: scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg)
           rotate(2deg);
       "
-      src={image}
+      src={canvas}
     />
   </div>
 </div>
